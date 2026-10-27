@@ -1,0 +1,1 @@
+Help me design a workspace for this recurring job: [describe the job]. Ask about the user, inputs, output, and success check. Then propose the smallest useful folder structure, recurring rules, and any reusable method. Explain whether each method needs a skill or a plain reference. Identify actions that need my review. Show the design before creating files or connecting tools.

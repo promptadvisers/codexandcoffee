@@ -1,0 +1,5 @@
+id,topic,requester
+R101,invoice copy,customer A
+R101,invoice copy,customer A
+R102,access issue,customer B
+Same ID requires duplicate review
