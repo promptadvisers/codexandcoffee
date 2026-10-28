@@ -1,0 +1,40 @@
+{
+  "measuredOnLocalDate": "2026-10-27",
+  "measurement": "Complete file contents, UTF-8 bytes and Unicode code points; UTF-16 code units also reported for reproducibility. No tokenization performed.",
+  "files": [
+    {
+      "label": "baselineApp",
+      "path": "checkpoints/01-characterized/app.js",
+      "utf8Bytes": 11441,
+      "unicodeCodePoints": 11427,
+      "utf16CodeUnits": 11427,
+      "sha256": "9d2291b547d06dd35acd4e83549790df5c6b07603839d07b162ad7e8a2b9dfe1"
+    },
+    {
+      "label": "extractedDomain",
+      "path": "app/domain/pricing.js",
+      "utf8Bytes": 935,
+      "unicodeCodePoints": 935,
+      "utf16CodeUnits": 935,
+      "sha256": "3a1001341ac9da3c0cf6d73ca805398ba7551b174ed82d24a8d2f231552db81e"
+    },
+    {
+      "label": "finalFacade",
+      "path": "app/app.js",
+      "utf8Bytes": 10597,
+      "unicodeCodePoints": 10583,
+      "utf16CodeUnits": 10583,
+      "sha256": "7aa3924262b00f1ddef0072141206f6b49398e58518d204c064fa79ff408bc30"
+    }
+  ],
+  "comparison": {
+    "baselineAppBytes": 11441,
+    "extractedDomainBytes": 935,
+    "byteDifference": 10506,
+    "domainPercentOfBaselineBytes": 8.1724,
+    "baselineAppCharacters": 11427,
+    "extractedDomainCharacters": 935,
+    "characterDifference": 10492
+  },
+  "interpretation": "A pricing-only source inspection can use the smaller domain file. This compares potential source context scope only, not whole-task context, billing tokens, actual model usage, or token savings. Facade, contracts, tests and related UI code remain necessary for other tasks."
+}

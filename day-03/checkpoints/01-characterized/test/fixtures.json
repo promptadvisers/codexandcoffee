@@ -1,0 +1,54 @@
+{
+  "seeded": {
+    "input": {
+      "id": "MOR-026",
+      "project": "A clearer customer experience",
+      "client": "Northstar Services",
+      "brief": "Understand the current customer journey and turn the findings into a practical service improvement plan.",
+      "discount": 5,
+      "tax": 13,
+      "deposit": 30,
+      "items": [
+        { "id": "discovery", "name": "Discovery & stakeholder interviews", "qty": 2, "rate": 1600, "cost": 900 },
+        { "id": "service", "name": "Service blueprint & recommendations", "qty": 5, "rate": 1250, "cost": 700 },
+        { "id": "handover", "name": "Team workshop & handover", "qty": 3, "rate": 1100, "cost": 650 }
+      ]
+    },
+    "expected": {
+      "rows": [
+        { "id": "discovery", "amount": 320000, "cost": 180000 },
+        { "id": "service", "amount": 625000, "cost": 350000 },
+        { "id": "handover", "amount": 330000, "cost": 195000 }
+      ],
+      "subtotal": 1275000, "cost": 725000, "discount": 63750,
+      "net": 1211250, "tax": 157463, "total": 1368713,
+      "deposit": 410614, "balance": 958099, "margin": 40.1
+    }
+  },
+  "scenarios": [
+    { "discountPercent": 0, "expected": { "subtotal": 1275000, "cost": 725000, "discount": 0, "net": 1275000, "tax": 165750, "total": 1440750, "deposit": 432225, "balance": 1008525, "margin": 43.1 } },
+    { "discountPercent": 5, "expected": { "subtotal": 1275000, "cost": 725000, "discount": 63750, "net": 1211250, "tax": 157463, "total": 1368713, "deposit": 410614, "balance": 958099, "margin": 40.1 } },
+    { "discountPercent": 10, "expected": { "subtotal": 1275000, "cost": 725000, "discount": 127500, "net": 1147500, "tax": 149175, "total": 1296675, "deposit": 389003, "balance": 907672, "margin": 36.8 } }
+  ],
+  "rounding": [
+    {
+      "name": "unit cents are rounded before multiplying quantity",
+      "input": { "items": [{ "id": "fraction", "qty": 3, "rate": 0.014, "cost": 0.014 }] },
+      "expected": { "rows": [{ "id": "fraction", "amount": 3, "cost": 3 }], "subtotal": 3, "cost": 3, "discount": 0, "net": 3, "tax": 0, "total": 3, "deposit": 0, "balance": 3, "margin": 0 }
+    },
+    {
+      "name": "row, discount, tax and tax-inclusive deposit round in sequence",
+      "input": { "items": [{ "id": "half", "qty": 0.5, "rate": 1.05, "cost": 0.03 }], "discount": 10, "tax": 13, "deposit": 25 },
+      "expected": { "rows": [{ "id": "half", "amount": 53, "cost": 2 }], "subtotal": 53, "cost": 2, "discount": 5, "net": 48, "tax": 6, "total": 54, "deposit": 14, "balance": 40, "margin": 95.8 }
+    },
+    {
+      "name": "each fractional row rounds before summing",
+      "input": { "items": [{ "id": "a", "qty": 0.5, "rate": 0.01, "cost": 0.01 }, { "id": "b", "qty": 0.5, "rate": 0.01, "cost": 0.01 }] },
+      "expected": { "rows": [{ "id": "a", "amount": 1, "cost": 1 }, { "id": "b", "amount": 1, "cost": 1 }], "subtotal": 2, "cost": 2, "discount": 0, "net": 2, "tax": 0, "total": 2, "deposit": 0, "balance": 2, "margin": 0 }
+    }
+  ],
+  "numericStrings": {
+    "input": { "items": [{ "id": 42, "qty": "2.5", "rate": "12.34", "cost": "2.34" }], "discount": "5", "tax": "13", "deposit": "30" },
+    "expected": { "rows": [{ "id": "42", "amount": 3085, "cost": 585 }], "subtotal": 3085, "cost": 585, "discount": 154, "net": 2931, "tax": 381, "total": 3312, "deposit": 994, "balance": 2318, "margin": 80 }
+  }
+}

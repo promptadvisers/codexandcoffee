@@ -1,0 +1,8 @@
+{
+  "name": "quote-proposal-studio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {"start": "node server.mjs", "test": "node --test", "check": "node --check app.js && node --test"},
+  "description": "A fictional consulting quote studio for a behavior-preserving refactoring lesson. No external dependencies."
+}

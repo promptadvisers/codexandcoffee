@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Quote Studio — Morrow Advisory</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header class="topbar"><a class="brand" href="#"><span class="monogram">M</span><span>MORROW<span class="brand-sub">ADVISORY STUDIO</span></span></a><div class="top-actions"><span class="local-label">Fictional demo · saved in this browser</span><button id="new-quote" class="text-button">New quote</button><button id="reset-demo" class="text-button">Reset example</button></div></header>
+<main>
+<div class="page-heading"><div><p class="eyebrow">PROJECT COMMERCIALS</p><h1>Make the work<br><span>worth doing.</span></h1><p class="intro">Shape the scope. Test the numbers. Send a proposal you can stand behind.</p></div><aside class="heading-aside"><span class="edition">QUOTE STUDIO / 01</span><p>From a first conversation<br>to a considered commitment.</p></aside></div>
+<div class="workspace">
+<section class="editor" aria-label="Quote editor">
+<div class="section-title"><h2>The engagement</h2><span id="quote-status" class="status-label">Unsaved draft</span></div>
+<div class="brief-fields"><label>Project name<input id="project-name" maxlength="100"></label><label>Client<input id="client-name" maxlength="100"></label></div>
+<label class="full-label">The brief<textarea id="project-brief" rows="2" maxlength="600"></textarea></label>
+<div class="section-title scope-title"><h2>Scope of work</h2><button id="add-line" class="text-button">+ Add a service</button></div>
+<div class="line-head" aria-hidden="true"><span>SERVICE</span><span>QTY</span><span>RATE</span><span>LINE TOTAL</span><span></span></div>
+<div id="quote-lines"></div>
+<details class="cost-details"><summary>Internal delivery costs <span>For your margin check</span></summary><div id="cost-lines"></div></details>
+<div class="commercials"><label>Client discount <div class="unit-input"><input id="discount" type="number" min="0" max="100" step="0.5"><span>%</span></div></label><label>Tax rate <div class="unit-input"><input id="tax" type="number" min="0" max="100" step="0.1"><span>%</span></div></label><label>Upfront deposit <div class="unit-input"><input id="deposit" type="number" min="0" max="100" step="5"><span>%</span></div></label></div>
+<div class="editor-bottom"><button id="save-quote" class="primary-button">Save quote</button><button id="export-proposal" class="secondary-button">Export proposal</button><span id="notice" role="status" aria-live="polite"></span></div>
+<p class="input-note" id="input-note">Amounts are CAD. No currency conversion or external services.</p>
+</section>
+<aside class="quote-summary" aria-label="Quote summary"><div class="summary-top"><p class="eyebrow">YOUR PROPOSAL</p><span id="quote-reference">MOR-026</span></div><p id="summary-client" class="summary-client"></p><div id="grand-total" class="grand-total"></div><p class="total-caption">Total including tax · CAD</p><div class="summary-divider"></div><dl class="totals"><div><dt>Scope subtotal</dt><dd id="subtotal"></dd></div><div><dt id="discount-label">Client discount</dt><dd id="discount-total"></dd></div><div class="emphasized"><dt>Professional fees</dt><dd id="net-total"></dd></div><div><dt id="tax-label">Tax</dt><dd id="tax-total"></dd></div></dl><div class="payment-box"><div><span>UPFRONT DEPOSIT</span><strong id="deposit-total"></strong></div><div><span>REMAINING BALANCE</span><strong id="balance-total"></strong></div></div><div class="margin-block"><div><span>Delivery margin</span><strong id="margin-percent"></strong></div><div class="margin-track"><span id="margin-bar"></span></div><p id="margin-message"></p></div><button id="scenario-toggle" class="scenario-trigger" aria-expanded="false">Explore pricing scenarios <span>↗</span></button></aside>
+</div>
+<section id="scenarios" class="scenarios" hidden><div class="section-title"><div><p class="eyebrow">BEFORE YOU COMMIT</p><h2>What does a concession cost?</h2></div><button id="close-scenarios" class="text-button">Close scenarios</button></div><p>Compare the same scope at three discounts. Tax is excluded from the margin calculation.</p><div id="scenario-options" class="scenario-options"></div></section>
+<section class="saved-section"><div class="section-title"><h2>Saved proposals</h2><span id="saved-count"></span></div><div id="saved-quotes"></div></section>
+<footer><span>Prepared for learning. Clients, projects and rates are fictional.</span><span>CODEX & COFFEE · DAY 3</span></footer>
+</main><script type="module" src="app.js"></script></body></html>
