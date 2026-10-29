@@ -1,0 +1,9 @@
+I inspect commercial properties. After a visit, I spend too long turning rough notes and photos into a report the client can follow.
+
+Use inspection-notes.md and report-outline.md. Photos can be placeholders in this first version.
+
+Plan a phone-friendly page where I can add observations, group them by area, and preview a report before exporting it.
+
+Keep the inspector’s wording and let me edit everything. Do not invent findings, certify compliance or diagnose hazards. Leave photo analysis and offline syncing for later.
+
+Before building, show me a simple screen flow, a few small build steps and how we would check that no observation is lost in the report.

@@ -1,0 +1,5 @@
+sku,name,on_hand,reorder_point,target_stock
+S01,Notebook,8,10,30
+S02,Pen pack,35,12,40
+S03,Folder,4,8,20
+S04,Desk pad,5,,25

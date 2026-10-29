@@ -1,0 +1,9 @@
+I run a small maintenance company. Before each visit, the team needs to know the job, the access details and what to bring.
+
+Use jobs.csv and visit-checklist.md. The customer names and addresses are made up.
+
+Plan a browser page that shows upcoming visits and lets me open a clear job card with a checklist for each one.
+
+Start with a CSV upload and one person using it. Leave out route optimisation, live tracking and customer messages. Flag missing access details.
+
+Walk me through the first version in plain English. Break the build into a few steps and tell me what I should try to make sure it works. Do not build it yet.

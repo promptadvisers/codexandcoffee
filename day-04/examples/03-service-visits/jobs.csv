@@ -1,0 +1,4 @@
+job_id,customer,date,job,access,equipment
+J01,Cedar House,2030-05-08,Inspect ventilation,Reception from 09:00,Inspection kit
+J02,Harbour Hall,2030-05-08,Replace filters,,Filter pack
+J03,Fieldwork Office,2030-05-09,Check thermostat,Call site manager,Test meter

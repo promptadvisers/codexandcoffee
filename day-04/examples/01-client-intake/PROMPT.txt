@@ -1,0 +1,9 @@
+I run a small design agency. New client requests come in through email, and we keep chasing people for the same missing details.
+
+Use the three fake enquiries in enquiries.md and the questions in intake-checklist.md.
+
+Help me plan a simple page where I can review a request, see what is missing, and draft the next questions to ask.
+
+Keep the first version local, with fake clients and no login or email connection. I want to review every draft before anything is sent.
+
+Before you build anything, show me a short plan: what the page does, a few small build steps, and how we would check it. Point out any assumption that could change the plan.

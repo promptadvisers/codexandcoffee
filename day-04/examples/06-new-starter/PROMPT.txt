@@ -1,0 +1,9 @@
+I look after onboarding at a small company. New starters keep asking where things are and what they should do in their first week.
+
+Use first-week.md and company-guide.md. Treat these as the source material, and point people back to the relevant section.
+
+Plan a simple hub with a first-week checklist and a way to look up answers from the guide.
+
+Use a fictional starter and sample policies. Leave out payroll, identity documents and employee performance. If the guide does not answer a question, say so.
+
+Give me a short plan for the first version, including whether simple search would be enough. Then list the build steps and how we would check the answers before building.

@@ -1,0 +1,9 @@
+I run a small shop. Some products run out unexpectedly, but I do not want a system placing orders for me.
+
+Use stock.csv and reorder-rules.md. Keep the suggested quantities tied to those rules.
+
+Plan a simple board that shows which items need attention and prepares a draft reorder list I can adjust.
+
+Use one uploaded file for now. No supplier connection, automatic orders or demand predictions. If a rule or stock count is missing, flag it.
+
+Show me what we can build first, what can wait, and how we will check the suggested reorder list. Stop at the plan so I can review it.

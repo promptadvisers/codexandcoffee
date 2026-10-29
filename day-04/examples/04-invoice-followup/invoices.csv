@@ -1,0 +1,5 @@
+invoice_id,client,amount_cad,due_date,paid_date,status
+I01,Cedar Studio,1200,2030-05-01,,unpaid
+I02,Harbour Works,800,2030-05-09,2030-05-08,paid
+I03,Fieldwork Co,950,,,unpaid
+I04,Pine Lab,600,2030-05-02,2030-05-05,unpaid

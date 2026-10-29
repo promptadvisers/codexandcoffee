@@ -1,0 +1,9 @@
+I write a weekly newsletter for a small training company. Good ideas are scattered across notes, and starting a draft takes too long.
+
+Use source-notes.md and voice-notes.md as the starting material. Keep a link back to the note behind each claim.
+
+Plan a small tool where I can pick a topic, get a draft, and edit it beside the source notes.
+
+For now, paste text in and export the draft. No web research, mailing-list connection or automatic publishing. Leave gaps visible instead of making up facts.
+
+Show me the smallest useful version first, then the build steps and a couple of checks we can run. Hold off on coding until I have reviewed the plan.

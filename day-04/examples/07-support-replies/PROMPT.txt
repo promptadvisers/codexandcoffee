@@ -1,0 +1,9 @@
+I run a small software support team. We spend too much time sorting similar questions and writing the same first reply.
+
+Use tickets.csv and help-articles.md. Show which article supports each suggested reply.
+
+Plan a workbench where we can filter tickets, read a suggested reply, and edit it before copying it out.
+
+Keep everything in a local demo. Do not send replies, change customer accounts or promise refunds. If the articles do not cover the issue, mark it for a person.
+
+Start with a short plan and a few build steps. Include checks for a normal question, an unclear question and one the articles cannot answer. Wait before coding.

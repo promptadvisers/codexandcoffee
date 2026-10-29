@@ -1,0 +1,9 @@
+I run a small consultancy. I want a clearer way to see which invoices need a follow-up without checking a spreadsheet row by row.
+
+Use invoices.csv. Treat 10 May 2030 as the review date for this example, and show how you decide whether an invoice is overdue.
+
+Plan a page where I can upload the file, see overdue unpaid invoices, and prepare a reminder for one selected invoice.
+
+Do not connect to a bank, change accounting records or send messages. Flag missing dates and conflicting payment details for me to review.
+
+Give me a short plan with the first screens, the build order and a few example checks. Ask about anything that would change the overdue rule before coding.
