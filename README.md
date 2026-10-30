@@ -8,13 +8,38 @@ Course materials from Mark Kashef. Each day is self-contained: start with the da
 
 Download, unzip, and open your day’s folder. No Git commands or GitHub account needed.
 
-| Day | Theme | Everything for this day | PowerPoint only | Editable board only |
-| --- | --- | --- | --- | --- |
-| [Day 1](day-01/) | Auditing Your Starting Point | [Download Day 1 ZIP](https://github.com/promptadvisers/codexandcoffee/releases/latest/download/day-01.zip) | [Download slides](https://github.com/promptadvisers/codexandcoffee/raw/refs/heads/main/day-01/Day-01.pptx) | [Download Excalidraw](https://github.com/promptadvisers/codexandcoffee/raw/refs/heads/main/day-01/Day-01.excalidraw) |
-| [Day 2](day-02/) | Building a Workspace You Can Use | [Download Day 2 ZIP](https://github.com/promptadvisers/codexandcoffee/releases/latest/download/day-02.zip) | [Download slides](https://github.com/promptadvisers/codexandcoffee/raw/refs/heads/main/day-02/Day-02.pptx) | [Download Excalidraw](https://github.com/promptadvisers/codexandcoffee/raw/refs/heads/main/day-02/Day-02.excalidraw) |
-| [Day 3](day-03/) | Rescuing a Vibe-Coded App | [Download Day 3 ZIP](https://github.com/promptadvisers/codexandcoffee/releases/latest/download/day-03.zip) | [Download slides](https://github.com/promptadvisers/codexandcoffee/raw/refs/heads/main/day-03/Day-03.pptx) | [Download Excalidraw](https://github.com/promptadvisers/codexandcoffee/raw/refs/heads/main/day-03/Day-03.excalidraw) |
-| [Day 4](day-04/) | Planning What to Build | [Download Day 4 ZIP](https://github.com/promptadvisers/codexandcoffee/releases/latest/download/day-04.zip) | Not included | [Download Excalidraw](https://github.com/promptadvisers/codexandcoffee/raw/refs/heads/main/day-04/Day-04.excalidraw) |
-| [Day 5](day-05/) | Computer Use: Inside the Click | [Open Day 5](day-05/) | [Download slides](https://github.com/promptadvisers/codexandcoffee/raw/refs/heads/main/day-05/Day-05.pptx) | Not included |
+## Daily materials
+
+### [Day 1: Auditing Your Starting Point](day-01/)
+
+- [Download all files (.zip)](https://github.com/promptadvisers/codexandcoffee/releases/latest/download/day-01.zip)
+- [Download PowerPoint (.pptx)](https://github.com/promptadvisers/codexandcoffee/raw/refs/heads/main/day-01/Day-01.pptx)
+- [Download editable board (.excalidraw)](https://github.com/promptadvisers/codexandcoffee/raw/refs/heads/main/day-01/Day-01.excalidraw)
+
+### [Day 2: Building a Workspace You Can Use](day-02/)
+
+- [Download all files (.zip)](https://github.com/promptadvisers/codexandcoffee/releases/latest/download/day-02.zip)
+- [Download PowerPoint (.pptx)](https://github.com/promptadvisers/codexandcoffee/raw/refs/heads/main/day-02/Day-02.pptx)
+- [Download editable board (.excalidraw)](https://github.com/promptadvisers/codexandcoffee/raw/refs/heads/main/day-02/Day-02.excalidraw)
+
+### [Day 3: Rescuing a Vibe-Coded App](day-03/)
+
+- [Download all files (.zip)](https://github.com/promptadvisers/codexandcoffee/releases/latest/download/day-03.zip)
+- [Download PowerPoint (.pptx)](https://github.com/promptadvisers/codexandcoffee/raw/refs/heads/main/day-03/Day-03.pptx)
+- [Download editable board (.excalidraw)](https://github.com/promptadvisers/codexandcoffee/raw/refs/heads/main/day-03/Day-03.excalidraw)
+
+### [Day 4: Planning What to Build](day-04/)
+
+- [Download all files (.zip)](https://github.com/promptadvisers/codexandcoffee/releases/latest/download/day-04.zip)
+- [Download editable board (.excalidraw)](https://github.com/promptadvisers/codexandcoffee/raw/refs/heads/main/day-04/Day-04.excalidraw)
+
+PowerPoint not included.
+
+### [Day 5: Computer Use: Inside the Click](day-05/)
+
+- [Download PowerPoint (.pptx)](https://github.com/promptadvisers/codexandcoffee/raw/refs/heads/main/day-05/Day-05.pptx)
+
+The PowerPoint is available now. [Open the Day 5 folder](day-05/) for details.
 
 **[Try the Day 3 app in your browser](https://promptadvisers.github.io/codexandcoffee/day-03/)**
 
@@ -31,4 +56,4 @@ Download, unzip, and open your day’s folder. No Git commands or GitHub account
 
 Use the download links above. You do not need to click through every file or use the green Code button. If GitHub says a file is too large to preview, use its download link instead; the file can still be opened on your computer.
 
-Days 1–5 are available now. The combined ZIP above contains Days 1–4; download Day 5 separately from its row. Later days will appear here as their materials are added.
+Days 1–5 are available now. The combined ZIP above contains Days 1–4; download Day 5 separately from its section. Later days will appear here as their materials are added.
