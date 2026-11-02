@@ -41,12 +41,19 @@ PowerPoint not included.
 
 The PowerPoint is available now. [Open the Day 5 folder](day-05/) for details.
 
+### [Day 6: Inside the Codex Harness](day-06/)
+
+- [Open the visual reference in your browser](https://promptadvisers.github.io/codexandcoffee/day-06/)
+- [Download editable board (.excalidraw)](https://github.com/promptadvisers/codexandcoffee/raw/refs/heads/main/day-06/Inside-the-Codex-Harness.excalidraw)
+- [Download offline reference (.html)](https://github.com/promptadvisers/codexandcoffee/raw/refs/heads/main/day-06/Harness-reference.html)
+
 **[Try the Day 3 app in your browser](https://promptadvisers.github.io/codexandcoffee/day-03/)**
 
 ## Which file do I open?
 
 - **`.pptx`**: the slide deck. Open in Microsoft PowerPoint, or import into Google Slides.
 - **`.excalidraw`**: the editable diagram board, including its illustrations. Open [Excalidraw](https://excalidraw.com), choose the top-left menu → **Open**, and select the downloaded file. Zoom into one named section at a time.
+- **`.html`**: the visual reference. Save the file and open it in your browser.
 - **Day 1 → `Demos/Day-01-workshop-site/`**: the small practice website referenced by the slides. Copy the whole folder before experimenting; start with `START-HERE.md` and `TASK.md`.
 - **Day 2 → `WORKSPACE-PROMPT.txt`**: the copyable workspace-planning prompt.
 - **Day 2 → `examples/`**: the sample documents shown in the eight board sections. These are fictional teaching examples, not connected business systems.
@@ -56,4 +63,4 @@ The PowerPoint is available now. [Open the Day 5 folder](day-05/) for details.
 
 Use the download links above. You do not need to click through every file or use the green Code button. If GitHub says a file is too large to preview, use its download link instead; the file can still be opened on your computer.
 
-Days 1–5 are available now. The combined ZIP above contains Days 1–4; download Day 5 separately from its section. Later days will appear here as their materials are added.
+Materials for Days 1–6 are available now. The combined ZIP above contains Days 1–4; download Days 5 and 6 separately from their sections. Later days will appear here as their materials are added.
