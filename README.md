@@ -57,6 +57,12 @@ A 45-minute workshop: review a messy session, improve one skill, and test the ch
 
 **[Try the Day 3 app in your browser](https://promptadvisers.github.io/codexandcoffee/day-03/)**
 
+## Reusable skills
+
+- **[Retro](skills/retro/)** reviews a conversation and relevant project files, then suggests small improvements in plain English using short Keep / Fix / Add bullets where useful. It separates normal editing and access limits from mistakes, and keeps recommendations local to the project.
+
+Copy the complete `skills/retro` folder into your project's `.agents/skills` folder, then ask Codex: `Use $retro to review this conversation and suggest the smallest useful improvements.` This standalone version leaves the Day 7 workshop exercises and checkpoints unchanged.
+
 ## Which file do I open?
 
 - **`.pptx`**: the slide deck. Open in Microsoft PowerPoint, or import into Google Slides.

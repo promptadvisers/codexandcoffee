@@ -1,0 +1,26 @@
+interface:
+  display_name: "Retro"
+  short_description: "Review what happened and suggest useful local fixes"
+  default_prompt: |
+    Use $retro to review this conversation and the relevant project files.
+
+    Write a short report in plain English.
+    Use bullets, short sentences, and familiar words.
+    Skip jargon, formal language, and repeated explanations.
+
+    Use these labels when useful:
+    - Keep: What already works.
+    - Fix: What went wrong and what to do differently.
+    - Add: The smallest useful change, with its local file target.
+    - Leave alone: What does not need changing.
+    - Still pending: Work waiting on access, input, or approval.
+
+    Omit labels that have nothing useful to say.
+    Do not repeat existing rules or turn normal editing into failures.
+    Include a brief example when it helps explain a fix.
+    Keep recommendations inside the project.
+
+    End with what was changed, or say that nothing was changed.
+
+policy:
+  allow_implicit_invocation: true
