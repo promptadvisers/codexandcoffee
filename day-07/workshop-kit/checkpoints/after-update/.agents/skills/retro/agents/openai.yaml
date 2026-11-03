@@ -1,0 +1,4 @@
+interface:
+  display_name: "Retro"
+  short_description: "Review a session and propose better next steps"
+  default_prompt: "Use $retro to review this session. Focus on corrections I had to repeat."

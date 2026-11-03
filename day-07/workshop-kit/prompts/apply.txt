@@ -1,0 +1,1 @@
+$retro-electro mode=apply Review session/transcript.md and the files in session/, then update the workspace accordingly. Limit changes to .agents/skills/brief-builder/SKILL.md and AGENTS.md. Preserve unrelated guidance and show what changed.

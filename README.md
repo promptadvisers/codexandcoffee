@@ -47,6 +47,14 @@ The PowerPoint is available now. [Open the Day 5 folder](day-05/) for details.
 - [Download editable board (.excalidraw)](https://github.com/promptadvisers/codexandcoffee/raw/refs/heads/main/day-06/Inside-the-Codex-Harness.excalidraw)
 - [Download offline reference (.html)](https://github.com/promptadvisers/codexandcoffee/raw/refs/heads/main/day-06/Harness-reference.html)
 
+### [Day 7: Better Skills with Retro](day-07/)
+
+- [Download PowerPoint (.pptx)](https://github.com/promptadvisers/codexandcoffee/raw/refs/heads/main/day-07/Day-07.pptx)
+- [Download the learner kit (.zip)](https://github.com/promptadvisers/codexandcoffee/raw/refs/heads/main/day-07/Retro-workshop-kit.zip)
+- [Setup, skills and exact prompts](day-07/workshop-kit/START-HERE.md)
+
+A 45-minute workshop: review a messy session, improve one skill, and test the change on a fresh task.
+
 **[Try the Day 3 app in your browser](https://promptadvisers.github.io/codexandcoffee/day-03/)**
 
 ## Which file do I open?
@@ -63,4 +71,4 @@ The PowerPoint is available now. [Open the Day 5 folder](day-05/) for details.
 
 Use the download links above. You do not need to click through every file or use the green Code button. If GitHub says a file is too large to preview, use its download link instead; the file can still be opened on your computer.
 
-Materials for Days 1–6 are available now. The combined ZIP above contains Days 1–4; download Days 5 and 6 separately from their sections. Later days will appear here as their materials are added.
+Materials for Days 1–7 are available now. The combined ZIP above contains Days 1–4; download Days 5–7 separately from their sections. Later days will appear here as their materials are added.

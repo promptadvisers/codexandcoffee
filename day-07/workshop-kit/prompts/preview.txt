@@ -1,0 +1,1 @@
+$retro-electro mode=preview Review session/transcript.md and the files in session/. Propose workspace changes. Limit scope to .agents/skills/brief-builder/SKILL.md and AGENTS.md. Do not change any files.

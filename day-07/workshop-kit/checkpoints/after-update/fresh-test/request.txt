@@ -1,0 +1,1 @@
+Use $brief-builder to write an internal brief from fresh-test/source-notes.md. Save it as fresh-test/brief.md. Keep it local.

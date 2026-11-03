@@ -1,0 +1,1 @@
+$retro-electro mode=preview Review session/transcript.md. Propose one reusable instruction for the brief-builder skill. Explain its evidence and give a fresh test that could expose the same problem. Do not change files.

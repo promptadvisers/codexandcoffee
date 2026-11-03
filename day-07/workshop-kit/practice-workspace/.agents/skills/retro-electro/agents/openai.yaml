@@ -1,0 +1,4 @@
+interface:
+  display_name: "Retro Electro"
+  short_description: "Turn a session review into scoped workspace fixes"
+  default_prompt: "Use $retro-electro to preview workspace improvements from this session."
