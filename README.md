@@ -55,6 +55,14 @@ The PowerPoint is available now. [Open the Day 5 folder](day-05/) for details.
 
 A 45-minute workshop: review a messy session, improve one skill, and test the change on a fresh task.
 
+### [Day 8: Editing Videos with Codex](day-08/)
+
+- [Download PowerPoint (.pptx)](https://github.com/promptadvisers/codexandcoffee/raw/refs/heads/main/day-08/Day-08.pptx)
+- [Open the slides and playable demos](https://promptadvisers.github.io/codexandcoffee/day-08/)
+- [Download the learner kit (.zip)](https://github.com/promptadvisers/codexandcoffee/raw/refs/heads/main/day-08/Video-editing-kit.zip)
+
+A 45-minute lesson on planning cuts, editing with FFmpeg, making HyperFrames graphics, and checking the result. Includes the original and edited recordings.
+
 **[Try the Day 3 app in your browser](https://promptadvisers.github.io/codexandcoffee/day-03/)**
 
 ## Reusable skills
@@ -77,4 +85,4 @@ Copy the complete `skills/retro` folder into your project's `.agents/skills` fol
 
 Use the download links above. You do not need to click through every file or use the green Code button. If GitHub says a file is too large to preview, use its download link instead; the file can still be opened on your computer.
 
-Materials for Days 1–7 are available now. The combined ZIP above contains Days 1–4; download Days 5–7 separately from their sections. Later days will appear here as their materials are added.
+Materials for Days 1–8 are available now. The combined ZIP above contains Days 1–4; download Days 5–8 separately from their sections. Later days will appear here as their materials are added.
