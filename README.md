@@ -63,6 +63,13 @@ A 45-minute workshop: review a messy session, improve one skill, and test the ch
 
 A 45-minute lesson on planning cuts, editing with FFmpeg, making HyperFrames graphics, and checking the result. Includes the original and edited recordings.
 
+### [Day 9: Make an Explainer People Can Follow](day-09/)
+
+- [Download PowerPoint (.pptx)](https://github.com/promptadvisers/codexandcoffee/raw/refs/heads/main/day-09/Day-09.pptx)
+- [Download the five finalized videos](day-09/videos/)
+
+A 45-minute lesson with five distinct video examples, actual production briefs, design breakdowns and focused replays. The 52-slide PowerPoint includes the videos.
+
 **[Try the Day 3 app in your browser](https://promptadvisers.github.io/codexandcoffee/day-03/)**
 
 ## Reusable skills
@@ -85,4 +92,4 @@ Copy the complete `skills/retro` folder into your project's `.agents/skills` fol
 
 Use the download links above. You do not need to click through every file or use the green Code button. If GitHub says a file is too large to preview, use its download link instead; the file can still be opened on your computer.
 
-Materials for Days 1–8 are available now. The combined ZIP above contains Days 1–4; download Days 5–8 separately from their sections. Later days will appear here as their materials are added.
+Materials for Days 1–9 are available now. The combined ZIP above contains Days 1–4; download Days 5–9 separately from their sections. Later days will appear here as their materials are added.
