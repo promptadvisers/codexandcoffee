@@ -70,6 +70,13 @@ A 45-minute lesson on planning cuts, editing with FFmpeg, making HyperFrames gra
 
 A 45-minute lesson with five distinct video examples, actual production briefs, design breakdowns and focused replays. The 52-slide PowerPoint includes the videos.
 
+### [Day 10: Make Images That Belong Together](day-10/)
+
+- [Download PowerPoint (.pptx)](https://github.com/promptadvisers/codexandcoffee/raw/refs/heads/main/day-10/Day-10.pptx)
+- [Download the learner kit (.zip)](https://github.com/promptadvisers/codexandcoffee/raw/refs/heads/main/day-10/Image-generation-kit.zip)
+
+A 60-minute workshop on image-model mechanics, consistent visuals for slide decks, reference-guided edits and exact asset reuse. Includes 56 slides, annotated prompts and a fictional product campaign.
+
 **[Try the Day 3 app in your browser](https://promptadvisers.github.io/codexandcoffee/day-03/)**
 
 ## Reusable skills
@@ -92,4 +99,4 @@ Copy the complete `skills/retro` folder into your project's `.agents/skills` fol
 
 Use the download links above. You do not need to click through every file or use the green Code button. If GitHub says a file is too large to preview, use its download link instead; the file can still be opened on your computer.
 
-Materials for Days 1–9 are available now. The combined ZIP above contains Days 1–4; download Days 5–9 separately from their sections. Later days will appear here as their materials are added.
+Materials for Days 1–10 are available now. The combined ZIP above contains Days 1–4; download Days 5–10 separately from their sections. Later days will appear here as their materials are added.
