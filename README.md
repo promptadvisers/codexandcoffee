@@ -77,6 +77,14 @@ A 45-minute lesson with five distinct video examples, actual production briefs, 
 
 A 60-minute workshop on image-model mechanics, consistent visuals for slide decks, reference-guided edits and exact asset reuse. Includes 56 slides, annotated prompts and a fictional product campaign.
 
+### [Day 11: Agentic Workflows in Codex](day-11/)
+
+- [Download PowerPoint (.pptx)](https://github.com/promptadvisers/codexandcoffee/raw/refs/heads/main/day-11/Day-11.pptx)
+- [Download the learner kit (.zip)](https://github.com/promptadvisers/codexandcoffee/raw/refs/heads/main/day-11/Agentic-workflows-kit.zip)
+- [Download the offline slide viewer (.html)](https://github.com/promptadvisers/codexandcoffee/raw/refs/heads/main/day-11/Agentic-workflows.html)
+
+A 45-minute lesson with 48 slides: five workflow structures, plain-English prompts, editable diagrams, ten tested examples, and two illustrated answers for each practice exercise.
+
 **[Try the Day 3 app in your browser](https://promptadvisers.github.io/codexandcoffee/day-03/)**
 
 ## Reusable skills
@@ -99,4 +107,4 @@ Copy the complete `skills/retro` folder into your project's `.agents/skills` fol
 
 Use the download links above. You do not need to click through every file or use the green Code button. If GitHub says a file is too large to preview, use its download link instead; the file can still be opened on your computer.
 
-Materials for Days 1–10 are available now. The combined ZIP above contains Days 1–4; download Days 5–10 separately from their sections. Later days will appear here as their materials are added.
+Materials for Days 1–11 are available now. The combined ZIP above contains Days 1–4; download Days 5–11 separately from their sections. Later days will appear here as their materials are added.
