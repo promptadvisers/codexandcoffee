@@ -24,7 +24,7 @@ async function main() {
   assert.equal(hash(path.join(resources, 'native/backend.py')), hash(path.join(appRoot, 'backend.py')));
   const { listPackage, extractFile } = await import('@electron/asar');
   const asarPath = path.join(resources, 'app.asar');
-  const files = listPackage(asarPath);
+  const files = listPackage(asarPath).map(file => file.replaceAll('\\', '/'));
   for (const required of ['/main.cjs', '/preload.cjs', '/lib/config.cjs', '/lib/bridge.cjs', '/ui/index.html', '/ui/overlay.html', '/ui/vendor/marked.js']) assert.ok(files.includes(required), required);
   assert.equal(createHash('sha256').update(extractFile(asarPath, 'ui/vendor/marked.js')).digest('hex'), hash(path.join(appRoot, 'electron/node_modules/marked/lib/marked.esm.js')));
   for (const asset of JSON.parse(extractFile(asarPath, 'ui/services/PROVENANCE.json').toString())) {
