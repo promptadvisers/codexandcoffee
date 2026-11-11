@@ -13,7 +13,7 @@ helper, backend = map(Path, sys.argv[1:3])
 checks = 0
 with tempfile.TemporaryDirectory(prefix='relay-protocol-') as temp:
     env = {**os.environ, 'RELAY_DATA_DIR': temp, 'RELAY_BACKEND_EXECUTABLE': str(backend.resolve()), 'RELAY_NO_SHORTCUTS': '1'}
-    child = subprocess.Popen([str(helper.resolve())], stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, env=env)
+    child = subprocess.Popen([str(helper.resolve())], stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, encoding='utf-8', env=env)
     events = queue.Queue()
     def read():
         for line in child.stdout:
@@ -48,13 +48,13 @@ with tempfile.TemporaryDirectory(prefix='relay-protocol-') as temp:
             send(command, command); check(not response(command)['ok'])
         send('status', 'status'); check(response('status')['result']['status']['fixture'])
         wait(lambda event: event.get('event') == 'state' and event.get('state') == 'idle')
-        send('ask', 'ask', text='Relay fixture')
+        send('ask', 'ask', text='Relay café 🟢')
         check(response('ask')['accepted'])
         result = wait(lambda event: event.get('event') == 'result')
-        check(result['result']['text'] == 'fixture: Relay fixture')
+        check(result['result']['text'] == 'fixture: Relay café 🟢')
         check(result['insertion'] == 'answered')
         entry = wait(lambda event: event.get('event') == 'history_entry')['entry']
-        check(entry['request'] == 'Relay fixture')
+        check(entry['request'] == 'Relay café 🟢')
         wait(lambda event: event.get('event') == 'state' and event.get('state') == 'idle')
         send('history_get', 'history'); check(len(response('history')['entries']) == 1)
         send('ask', 'slow', text='slow'); check(response('slow')['accepted'])

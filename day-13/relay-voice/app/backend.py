@@ -782,6 +782,10 @@ def dispatch(request):
 
 
 def main():
+    # Pipes between the helper and bundled bridge use UTF-8 on both platforms.
+    for stream in (sys.stdin, sys.stdout, sys.stderr):
+        if hasattr(stream, "reconfigure"):
+            stream.reconfigure(encoding="utf-8")
     TOOL_EVENTS.clear()
     try:
         raw = sys.stdin.buffer.read(1024 * 1024 + 1)

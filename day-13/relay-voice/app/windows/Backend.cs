@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
+using System.Text;
 using System.Text.Json;
 using System.Text.Json.Nodes;
 using System.Threading;
@@ -17,7 +18,7 @@ internal sealed class Backend
     public async Task<JsonObject> Call(Dictionary<string, object?> payload, Action<JsonObject> progress, CancellationToken token)
     {
         if (!Available) throw new IOException("The bundled provider bridge is missing. Reinstall Relay Voice.");
-        var start = new ProcessStartInfo(Executable) { UseShellExecute = false, CreateNoWindow = true, RedirectStandardInput = true, RedirectStandardOutput = true, RedirectStandardError = true };
+        var start = new ProcessStartInfo(Executable) { UseShellExecute = false, CreateNoWindow = true, RedirectStandardInput = true, RedirectStandardOutput = true, RedirectStandardError = true, StandardInputEncoding = new UTF8Encoding(false), StandardOutputEncoding = new UTF8Encoding(false), StandardErrorEncoding = new UTF8Encoding(false) };
         start.Environment["RELAY_PROGRESS"] = "1";
         using var child = new Process { StartInfo = start };
         if (!child.Start()) throw new IOException("The provider bridge could not start.");

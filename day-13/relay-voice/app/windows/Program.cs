@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using System.Text;
 using System.Text.Json;
 using System.Text.Json.Nodes;
 using System.Threading;
@@ -18,6 +19,8 @@ internal static class Program
     [STAThread]
     public static void Main()
     {
+        Console.InputEncoding = new UTF8Encoding(false);
+        Console.OutputEncoding = new UTF8Encoding(false);
         ApplicationConfiguration.Initialize();
         SynchronizationContext.SetSynchronizationContext(new WindowsFormsSynchronizationContext());
         using var helper = new VoiceHelper();
