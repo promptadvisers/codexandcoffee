@@ -44,6 +44,8 @@ jobs:
           if ($LASTEXITCODE -ne 0) { throw 'Native helper build failed' }
           python -m PyInstaller --noconfirm --clean --onefile --name relay-fixture --distpath app/dist/tests --workpath app/dist/tests-work --specpath app/dist app/windows/tests/fixture_backend.py
           if ($LASTEXITCODE -ne 0) { throw 'Fixture build failed' }
+      - name: Test actual bundled Python executable without provider credentials
+        run: python scripts/check-packaged-backend.py app/dist/backend/relay-backend/relay-backend.exe
       - name: Test Windows helper with isolated fictional requests
         run: python app/windows/tests/check_protocol.py app/dist/windows-helper/relay-voice-helper.exe app/dist/tests/relay-fixture.exe
       - name: Package Electron
