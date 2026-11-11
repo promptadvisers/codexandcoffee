@@ -1,0 +1,54 @@
+:root{color-scheme:dark;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#eff9f3}*{box-sizing:border-box}body{margin:0;height:100vh;background:transparent;display:flex;align-items:flex-end;padding:12px;overflow:hidden;-webkit-user-select:none;user-select:none}.pill{width:100%;border:1px solid #52645b;background:#15211ef7;border-radius:24px;box-shadow:0 5px 12px #0005,inset 0 1px 0 #ffffff0e;overflow:hidden}.main-row{display:flex;align-items:center;gap:10px;padding:11px 12px 9px}.brand{width:36px;height:36px;flex-shrink:0;object-fit:contain}.status{min-width:0;flex:1;display:grid;gap:4px}strong{font-size:13px;font-weight:650;letter-spacing:-.2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.status span{font-size:11px;color:#adbbb2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.foot{min-height:28px;border-top:1px solid #ffffff0a;padding:6px 13px;display:flex;gap:10px;color:#c1cec6;font-size:10px;line-height:1.4}#detail{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}#duration{font-variant-numeric:tabular-nums}.actions{display:flex;align-items:center;gap:5px}button{font:600 11px -apple-system,BlinkMacSystemFont,sans-serif;color:#daeee1;background:#ffffff0b;border:1px solid #ffffff14;border-radius:9px;min-height:30px;padding:0 10px;white-space:nowrap;cursor:pointer}button:hover{background:#ffffff1a}button.primary{background:#b5f5cd;color:#11261b;border-color:#b5f5cd}button.close{padding:0 8px;font-size:17px;color:#9caf9f}button:focus-visible{outline:2px solid #b5f5cd;outline-offset:2px}.meter{display:flex;gap:2px;align-items:center;height:30px;width:60px;overflow:hidden}.meter[hidden]{display:none}.meter i{display:block;flex:1;min-width:2px;height:3px;background:#b5f5cd;border-radius:2px;transition:height 70ms linear}.pill[data-phase=recording]{border-color:#89b89a}.pill[data-phase=transcribing] .brand,.pill[data-phase=asking] .brand{opacity:.75}.pill[data-error=true]{border-color:#b29262}@media(prefers-reduced-motion:reduce){.meter i{transition:none}}@media(prefers-reduced-transparency:reduce){.pill{background:#15211e}}
+
+.brand{padding:4px;border-radius:10px;background:#fff;transition:opacity .15s}.trail{display:flex;gap:5px;align-items:center;flex-shrink:0}.trail-step{display:flex;position:relative}.trail .service-icon{width:17px;height:17px;object-fit:contain;background:#fff;padding:2px;border-radius:4px}.trail-step:after{content:'';width:5px;height:5px;background:#82dba3;border-radius:50%;position:absolute;right:-1px;bottom:-1px}.trail-step.running:after{background:#ffcc68}.trail-step.failed:after,.trail-step.cancelled:after{background:#e08873}.foot{align-items:center;min-height:30px}
+
+img[data-provider=Firecrawl],img[data-provider=Alexandria],.trail img[data-provider=Firecrawl],.trail img[data-provider=Alexandria]{background:#231f20;padding:4px}
+
+/* One circular activity ring follows actual provider state. */
+.brand-frame{position:relative;width:36px;height:36px;flex:0 0 36px;--activity:#b5f5cd;margin:3px}
+.brand-frame .brand{display:block;opacity:1!important;border-radius:50%;padding:5px}
+.brand-frame[data-provider=Firecrawl],.brand-frame[data-provider=Alexandria]{--activity:#fa5d19}
+.brand-frame[data-provider=Google],.brand-frame[data-provider=Gmail]{--activity:#4285f4}
+.brand-frame[data-status=running]:before,.brand-frame[data-status=running]:after{content:'';position:absolute;inset:-5px;border:2px solid #ffffff18;border-radius:50%;pointer-events:none}
+.brand-frame[data-status=running]:after{border-color:transparent;border-top-color:var(--activity);border-right-color:var(--activity);animation:activity-orbit 1.1s linear infinite}
+@keyframes activity-orbit{to{transform:rotate(360deg)}}
+@media(prefers-reduced-motion:reduce){.brand-frame[data-status=running]:after{animation:none}}
+
+/* Match the desktop surfaces while keeping the compact voice geometry. */
+.pill{background:linear-gradient(135deg,#25372cf7,#19271ffb);border:1px solid #b5edcc32;border-radius:23px;box-shadow:0 7px 18px #04100855,inset 0 1px #ffffff0c}
+.main-row{padding:12px 13px 10px;gap:11px}.status{gap:5px}strong{font-weight:600;letter-spacing:-.15px}.status span{color:#aabdaf}.foot{background:#0a150e28;color:#adC1b3;border-top-color:#c1e6ce0a;padding:7px 14px;min-height:31px}
+button{border-radius:8px;border-color:#b5edcc13;background:#ffffff06;transition:background .16s,transform .16s}button:hover{background:#ffffff10}button:active{transform:translateY(1px)}button.primary{background:#b5edcc;border-color:#d4f5e020;box-shadow:inset 0 1px #ffffff30;color:#14281b}button.close{background:transparent;border-color:transparent;color:#9db5a6;padding:0 6px}
+.brand-frame .brand[data-provider=Relay]{padding:0;background:transparent;filter:drop-shadow(0 2px 5px #06150b66);border-radius:11px}.brand-frame[data-status=running]:before{border-color:#b5edcc1d}.pill[data-error=true]{border-color:#c8aa7a66}
+@media(prefers-reduced-motion:reduce){button{transition:none}}
+
+.mini-controls{display:flex;align-items:center;gap:2px}.mini-controls[hidden]{display:none}.mini-controls button{width:25px;min-height:29px;padding:0;display:grid;place-items:center;background:transparent;border-color:transparent}.mini-controls svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}.mini-controls button:disabled{opacity:.3;cursor:default}.mini-controls .copied{background:#b5edcc;color:#11261b}.collapsed{padding:10px}.collapsed .pill{border-radius:24px}.collapsed .main-row{padding:8px 10px;gap:9px}.collapsed .brand-frame{width:28px;height:28px;flex-basis:28px;margin:2px}.collapsed .brand{width:28px;height:28px}.collapsed .status,.collapsed .actions,.collapsed .foot{display:none}.collapsed .meter{width:49px;height:28px;gap:2px;flex:1;min-width:30px}.collapsed .meter i:nth-child(n+12){display:none}.collapsed .meter i{min-width:2px}.collapsed .pill[data-phase=asking] .meter,.collapsed .pill[data-phase=transcribing] .meter{opacity:.65}.collapsed .pill[data-error=true] .meter i{background:#dbb58a}
+
+/* Idle is a readable state; waveform appears only for live microphone samples. */
+#mini-status{flex:1;min-width:0;font-size:11px;font-weight:500;color:#b8ccbf;letter-spacing:.1px}#mini-status[hidden]{display:none}.collapsed .meter[hidden]{display:none}
+
+/* Completed dictation keeps the spoken message as the only visible copy. */
+.transcript-only:not(.collapsed) #title,.transcript-only:not(.collapsed) .foot{display:none}
+.transcript-only:not(.collapsed) .status{display:block}
+.transcript-only:not(.collapsed) #subtitle{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;white-space:normal;overflow:hidden;font-size:13px;line-height:1.45;color:#e0eee5}
+.transcript-only:not(.collapsed) .main-row{padding:10px 12px;gap:10px}
+button.icon-copy{width:28px;min-height:30px;padding:0;display:grid;place-items:center;background:transparent;border-color:transparent;color:#b8ccbf}
+button.icon-copy:hover{background:#ffffff10;color:#e7f5ec}
+.icon-copy svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+button.icon-copy.copied{color:#b5edcc;background:#b5edcc18}
+
+/* Compact Markdown keeps headings and emphasis without growing the voice pill. */
+#subtitle{font-size:11px;line-height:1.45;color:#aabdaf;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.markdown-preview{display:inline}
+.markdown-preview :is(h1,h2,h3,h4,h5,h6,p,blockquote,ul,ol,li,pre,table,thead,tbody,tr,th,td,.table-scroll){display:inline;margin:0;padding:0;border:0;font-size:inherit;line-height:inherit;white-space:nowrap}
+.markdown-preview :is(h1,h2,h3,h4,h5,h6,strong){font-size:inherit;font-weight:650;letter-spacing:normal;color:#d5e8db}
+.markdown-preview :is(h1,h2,h3,h4,h5,h6,p,li,blockquote,tr)::after{content:' ';white-space:pre}
+.markdown-preview li::before{content:'· ';color:#8eab97}
+.markdown-preview :is(th,td)::after{content:' ';white-space:pre}
+.markdown-preview code{font-size:10px;color:#c8e3d0}
+.markdown-preview br,.markdown-preview hr{display:none}
+
+/* Native window dragging preserves focus in the user's text field. */
+.pill{-webkit-app-region:drag;app-region:drag}
+.pill :is(button,a){-webkit-app-region:no-drag;app-region:no-drag}
+.brand-frame{cursor:grab}
+.brand{-webkit-user-drag:none}

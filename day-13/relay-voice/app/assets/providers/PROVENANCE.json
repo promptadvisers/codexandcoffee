@@ -1,0 +1,28 @@
+[
+  {
+    "file": "firecrawl.png",
+    "url": "https://www.firecrawl.dev/brand/firecrawl-light-logo.png",
+    "date": "2026-09-27",
+    "sha256": "507efc22fae6dfe75505ac9d1ed9c028f2db18f75d49cee969b5d536ec9817e5"
+  },
+  {
+    "file": "google.png",
+    "url": "https://developers.google.com/static/identity/images/g-logo.png",
+    "date": "2026-09-27",
+    "sha256": "ac74877f7cc65d56a7fc8bf4dbf9f2fd31dc98515531d491792b65d532b77af1",
+    "source_sha256": "d1ce9c2af0b10a7333abc99bc706f9a6a199e5b65bf3e3009624f076b8638e6a",
+    "processing": "Removed textual/EXIF metadata; pixels unchanged."
+  },
+  {
+    "file": "gmail.svg",
+    "url": "https://www.gstatic.com/images/branding/productlogos/gmail_2026/v2/web/192px.svg",
+    "date": "2026-09-27",
+    "sha256": "0a242131424b796a26247a8edd41d66fa294da6d177897526a19b7e81aedfdb8"
+  },
+  {
+    "file": "firecrawl-active.png",
+    "url": "https://www.firecrawl.dev/brand/firecrawl-logo.png",
+    "date": "2026-09-27",
+    "sha256": "92fcc1adbd6d0dcaf5d45448d9b6c77a500ad4c42991e438ab94fc8c92f593da"
+  }
+]

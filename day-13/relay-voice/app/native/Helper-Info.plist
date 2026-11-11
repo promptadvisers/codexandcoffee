@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+<key>CFBundleName</key><string>Relay Voice Helper</string>
+<key>CFBundleIdentifier</key><string>com.relayvoice.community.helper</string>
+<key>CFBundleVersion</key><string>1</string>
+<key>NSMicrophoneUsageDescription</key><string>Relay Voice records while you hold Option and transcribes when you release.</string>
+<key>LSUIElement</key><true/>
+</dict></plist>

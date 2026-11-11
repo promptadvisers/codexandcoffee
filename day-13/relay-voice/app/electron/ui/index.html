@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'none'; base-uri 'none'; form-action 'none'; frame-src 'none'"><title>Relay Voice</title><link rel="stylesheet" href="styles.css"></head>
+<body><div class="titlebar"></div><aside class="sidebar">
+  <div class="identity"><img src="icon.png" alt=""><div><strong>Relay</strong><span>Your voice, in motion</span></div></div>
+  <nav aria-label="Main navigation"><button data-page="history" class="nav active"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11a9 9 0 1 1 2.6 7M3 4v7h7M12 7v5l3 2"/></svg>History<span class="count" id="history-count">0</span></button><button data-page="ask" class="nav"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 17 17 5M5 5h12v12"/></svg>Ask Relay</button><button data-page="settings" class="nav"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 17h16"/><circle cx="9" cy="7" r="3"/><circle cx="15" cy="17" r="3"/></svg>Settings</button></nav>
+  <div class="sidebar-bottom"><div class="shortcut"><kbd data-shortcut>⌥ Option</kbd><span>Hold to speak</span></div><div id="sidebar-status" class="connection">Starting helper</div><p>Your history stays on this computer.<br>Voice and tool requests use your configured providers.</p></div>
+</aside><main id="main-content">
+  <section id="page-result" class="page" hidden>
+    <header class="page-header"><div><div class="answer-brand"><img src="icon.png" alt=""><span>Relay<span class="brand-divider">/</span>Answer</span></div><h1>Your answer, ready.</h1></div><div class="answer-window-actions"><button data-page="history" class="button subtle">History</button><button id="minimize-to-pill" class="button subtle" title="Minimize to logo and waveform">Minimize</button></div></header>
+    <article id="answer-detail" aria-label="Completed answer"></article>
+  </section>
+  <div id="operation" class="operation" hidden><div><strong id="operation-title"></strong><span id="operation-detail"></span></div><button id="cancel-operation" class="button">Cancel</button></div>
+  <section id="page-history" class="page">
+    <header class="page-header"><div><p class="eyebrow">WORKSPACE</p><h1>History</h1><p>Pick up where you left off.</p></div><button id="refresh-history" class="button subtle">Refresh</button></header>
+    <label class="search"><span>⌕</span><input id="search" type="search" placeholder="Search words, answers, or tools" aria-label="Search history"><kbd>⌘ F</kbd></label>
+    <div class="history-layout"><div id="history-list" class="history-list" aria-label="History entries"></div><article id="history-detail" class="history-detail"></article></div>
+  </section>
+  <section id="page-ask" class="page" hidden>
+    <header class="page-header"><div><p class="eyebrow">ASK RELAY</p><h1>What’s on your mind?</h1><p>Research a topic. Find a dataset. Read an email.</p></div><span class="keyboard-hint" data-shortcut>Or just hold Option</span></header>
+    <form id="ask-form" class="ask-compose"><label for="ask-text">Your request</label><textarea id="ask-text" maxlength="4000" placeholder="Ask a question, research a topic, or find an email…" rows="4"></textarea><div class="compose-footer"><span>Gmail only when requested · Drafts stay unsaved</span><button type="submit" id="ask-submit" class="button primary">Ask Relay <span>↗</span></button></div></form>
+    <div id="ask-result" class="ask-result"><div class="empty-state"><div class="empty-mark">↗</div><h2>Start with a question.</h2><p>Type above or use the voice shortcut and speak.<br>Your answer will open here when it’s ready.</p></div></div>
+  </section>
+  <section id="page-settings" class="page" hidden>
+    <header class="page-header"><div><p class="eyebrow">PREFERENCES</p><h1>Settings & setup</h1><p>Make Relay feel at home on your computer.</p></div></header>
+    <div id="setup-banner" class="setup-banner"></div>
+    <section class="setting-section"><h2>Your provider keys</h2><p>Paste your own Gemini key to enable dictation. A Firecrawl key enables web research. Keys are encrypted using your operating system and stay on this computer.</p>
+    <form id="provider-keys"><label class="field">Gemini API key<input id="gemini-key" type="password" autocomplete="off" placeholder="Paste a new key"></label><label class="field">Firecrawl API key (optional)<input id="firecrawl-key" type="password" autocomplete="off" placeholder="Leave blank to keep the saved key"></label><button class="button primary" type="submit">Save provider keys</button><p id="key-status">Keys are never included in exported app files.</p></form></section>
+    <div class="settings-grid"><section class="setting-section"><h2 data-shortcut>Hold Option</h2><p>Release to finish. Escape cancels.</p><form id="settings-form">
+      <div class="mode-options"><p><strong>Speak naturally.</strong></p><p>Dictate text or ask for research and email help. Relay chooses automatically.</p></div>
+      <label class="field">Gmail account<select id="account"><option value="primary">Primary</option><option value="work">Work</option><option value="personal">Personal</option></select></label>
+      <label class="field">Gemini model<input id="model" type="text" maxlength="80" placeholder="Default from provider bridge" autocomplete="off"><span>Leave blank to use the bridge’s configured default.</span></label>
+      <button id="save-settings" class="button primary" type="submit">Save settings</button>
+    </form></section>
+    <section class="setting-section"><h2>Permissions</h2><p>Checked directly with the voice helper.</p><div id="permissions-list"></div><button id="refresh-permissions" class="button subtle">Refresh permissions</button><h2 class="spaced">Test auto-insert</h2><p>Click the button, then click a text field within 8 seconds. Relay inserts “Relay insertion test.” without recording.</p><button id="test-insertion" class="button">Test auto-insert</button><h2 class="spaced">Providers</h2><p>Check configuration and Gmail access on demand.</p><div id="providers-list"></div><button id="check-providers" class="button">Check providers</button><p id="provider-note" class="fine-print">No provider check has run this session.</p></section></div>
+    <section class="privacy-section"><div><h2>Local history</h2><p>Up to 100 requests, answers, sources, and unsaved previews are kept on this computer. Recording files are temporary.</p></div><button id="clear-history" class="button danger">Clear history…</button></section>
+    <p class="fine-print">The Python runtime is bundled. Gmail reads require your own authenticated Google Workspace CLI installation. Supported text fields receive dictation automatically. Copy is available for other fields. No email is sent or saved by this app.</p>
+  </section>
+</main><div id="toast" class="toast" role="status" hidden></div><script type="module" src="renderer.js"></script></body></html>
