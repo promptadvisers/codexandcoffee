@@ -220,7 +220,10 @@ _ACTIVE_CHILD = None
 def stop_child():
     if _ACTIVE_CHILD is not None and _ACTIVE_CHILD.poll() is None:
         try:
-            os.killpg(_ACTIVE_CHILD.pid, signal.SIGKILL)
+            if os.name == "nt":
+                subprocess.run(["taskkill", "/PID", str(_ACTIVE_CHILD.pid), "/T", "/F"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, check=False)
+            else:
+                os.killpg(_ACTIVE_CHILD.pid, signal.SIGKILL)
         except ProcessLookupError:
             pass
 
@@ -233,7 +236,8 @@ def cancelled(signum, frame):
 def cli_environment():
     # Finder-launched apps need the usual package-manager paths.
     env = os.environ.copy()
-    env["PATH"] = "/opt/homebrew/bin:/usr/local/bin:" + env.get("PATH", "/usr/bin:/bin:/usr/sbin:/sbin")
+    if os.name != "nt":
+        env["PATH"] = "/opt/homebrew/bin:/usr/local/bin:" + env.get("PATH", "/usr/bin:/bin:/usr/sbin:/sbin")
     return env
 
 

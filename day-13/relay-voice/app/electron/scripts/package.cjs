@@ -31,7 +31,7 @@ async function main() {
       platform: process.platform, arch: process.arch, electronVersion: require('electron/package.json').version,
       out: path.join(temp, 'output'), asar: true, asarIntegrityDigest: true, overwrite: false, prune: false,
       icon: path.join(appRoot, mac ? 'assets/relay-voice.icns' : 'assets/relay-voice.ico'),
-      extraResource: [native, path.join(appRoot, 'assets/relay-voice-icon.png')],
+      extraResource: [native, path.join(appRoot, 'assets/relay-voice-icon.png'), path.join(appRoot, '../licenses')],
       extendInfo: { NSMicrophoneUsageDescription: 'Relay Voice records while you hold Option to transcribe your speech.', LSApplicationCategoryType: 'public.app-category.productivity' }
     });
     const packageRoot = outputs[0];

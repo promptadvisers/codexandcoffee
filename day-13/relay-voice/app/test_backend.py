@@ -13,8 +13,11 @@ class BackendTests(unittest.TestCase):
     def test_desktop_cli_uses_vendor_command(self):
         import tempfile, os
         with tempfile.TemporaryDirectory() as directory:
-            executable = Path(directory) / "gws"
-            executable.write_text("#!/bin/sh\n[ \"$1\" = \"gmail\" ] || exit 3\nprintf '%s\\n' '{\"emailAddress\":\"fixture@example.test\"}'\n")
+            executable = Path(directory) / ("gws.cmd" if os.name == "nt" else "gws")
+            if os.name == "nt":
+                executable.write_text('@echo off\necho {"emailAddress":"fixture@example.test"}\n')
+            else:
+                executable.write_text("#!/bin/sh\nprintf '%s\\n' '{\"emailAddress\":\"fixture@example.test\"}'\n")
             executable.chmod(0o700)
             with patch.dict(os.environ, {"RELAY_GWS_BIN": str(executable)}):
                 result = backend.cli(["gws", "primary", "gmail", "users", "getProfile"])
@@ -24,7 +27,7 @@ class BackendTests(unittest.TestCase):
         with patch.object(backend, "private_env", side_effect=lambda key: "/tmp/vendor-gws" if key == "RELAY_GWS_BIN" else None):
             args, env = backend.google_command(["gws", "work", "gmail", "users", "getProfile"], {"PATH":"/usr/bin", "GOOGLE_WORKSPACE_CLI_TOKEN":"fixture", "GOOGLE_WORKSPACE_CLI_CREDENTIALS_FILE":"/tmp/fixture"})
             self.assertEqual(args, ["/tmp/vendor-gws", "gmail", "users", "getProfile"])
-            self.assertTrue(env["GOOGLE_WORKSPACE_CLI_CONFIG_DIR"].endswith("/google-workspace/work"))
+            self.assertEqual(Path(env["GOOGLE_WORKSPACE_CLI_CONFIG_DIR"]).parts[-2:], ("google-workspace", "work"))
             self.assertNotIn("GOOGLE_WORKSPACE_CLI_TOKEN", env)
             self.assertNotIn("GOOGLE_WORKSPACE_CLI_CREDENTIALS_FILE", env)
 
