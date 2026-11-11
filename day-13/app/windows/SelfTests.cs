@@ -139,6 +139,9 @@ internal static class SelfTests
         element.Arrange(new Rect(0, 0, width, height));
         element.UpdateLayout();
         var image = new RenderTargetBitmap(width, height, 96, 96, PixelFormats.Pbgra32);
+        var background = new DrawingVisual();
+        using (var drawing = background.RenderOpen()) drawing.DrawRectangle(Brushes.White, null, new Rect(0, 0, width, height));
+        image.Render(background);
         image.Render(element);
         var encoder = new PngBitmapEncoder();
         encoder.Frames.Add(BitmapFrame.Create(image));
