@@ -107,7 +107,7 @@ class BackendTests(unittest.TestCase):
 
     def test_silence_and_empty_audio_are_errors(self):
         import tempfile
-        with tempfile.NamedTemporaryFile(suffix=".m4a") as recording:
+        with tempfile.TemporaryDirectory() as directory, open(Path(directory) / "capture.m4a", "w+b") as recording:
             with self.assertRaises(backend.BridgeError):
                 backend.transcribe({"audio_path": recording.name})
             recording.write(b"fixture" * 30); recording.flush()
@@ -118,7 +118,7 @@ class BackendTests(unittest.TestCase):
 
     def test_smart_transcription_validates_route_without_executing_tools(self):
         import tempfile, json
-        with tempfile.NamedTemporaryFile(suffix=".m4a") as recording:
+        with tempfile.TemporaryDirectory() as directory, open(Path(directory) / "capture.m4a", "w+b") as recording:
             recording.write(b"fixture" * 30); recording.flush()
             for intent in ("dictate", "ask"):
                 response = {"candidates": [{"content": {"parts": [{"text": json.dumps({"text": "Hello there", "intent": intent, "tool_request": "email_read" if intent == "ask" else "none"})}]}}]}
@@ -136,7 +136,7 @@ class BackendTests(unittest.TestCase):
 
     def test_transcription_timing_and_custom_model_compatibility(self):
         import tempfile, json
-        with tempfile.NamedTemporaryFile(suffix=".m4a") as recording:
+        with tempfile.TemporaryDirectory() as directory, open(Path(directory) / "capture.m4a", "w+b") as recording:
             recording.write(b"fixture" * 30); recording.flush()
             response = {"candidates": [{"content": {"parts": [{"text": json.dumps({"text": "I love you", "intent": "dictate", "tool_request": "none"})}]}}]}
             for model in (None, "custom-model"):
@@ -153,7 +153,7 @@ class BackendTests(unittest.TestCase):
     def test_generic_ask_cannot_divert_dictation_without_supported_source_request(self):
         import tempfile, json
         text = "Just give me the prompt that I would give something like Codex, please, to do this, and tell me where the file is."
-        with tempfile.NamedTemporaryFile(suffix=".m4a") as recording:
+        with tempfile.TemporaryDirectory() as directory, open(Path(directory) / "capture.m4a", "w+b") as recording:
             recording.write(b"fixture" * 30); recording.flush()
             for capability in (None, "none", "write_prompt", "local_files", ["web_research"]):
                 parsed = {"text": text, "intent": "ask", "tool_request": capability}
