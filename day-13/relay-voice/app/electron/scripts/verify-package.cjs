@@ -24,14 +24,15 @@ async function main() {
   assert.equal(hash(path.join(resources, 'native/backend.py')), hash(path.join(appRoot, 'backend.py')));
   const { listPackage, extractFile } = await import('@electron/asar');
   const asarPath = path.join(resources, 'app.asar');
+  const readArchive = filename => extractFile(asarPath, filename.split('/').join(path.sep));
   const files = listPackage(asarPath).map(file => file.replaceAll('\\', '/'));
   for (const required of ['/main.cjs', '/preload.cjs', '/lib/config.cjs', '/lib/bridge.cjs', '/ui/index.html', '/ui/overlay.html', '/ui/vendor/marked.js']) assert.ok(files.includes(required), required);
-  assert.equal(createHash('sha256').update(extractFile(asarPath, 'ui/vendor/marked.js')).digest('hex'), hash(path.join(appRoot, 'electron/node_modules/marked/lib/marked.esm.js')));
-  for (const asset of JSON.parse(extractFile(asarPath, 'ui/services/PROVENANCE.json').toString())) {
-    assert.equal(createHash('sha256').update(extractFile(asarPath, `ui/services/${asset.file}`)).digest('hex'), asset.sha256);
+  assert.equal(createHash('sha256').update(readArchive('ui/vendor/marked.js')).digest('hex'), hash(path.join(appRoot, 'electron/node_modules/marked/lib/marked.esm.js')));
+  for (const asset of JSON.parse(readArchive('ui/services/PROVENANCE.json').toString())) {
+    assert.equal(createHash('sha256').update(readArchive(`ui/services/${asset.file}`)).digest('hex'), asset.sha256);
   }
   assert.ok(!files.some(file => /node_modules|tests|fixture|\.env|backend\.py|providers\.json|history\.json/.test(file)));
-  const pkg = JSON.parse(extractFile(asarPath, 'package.json').toString());
+  const pkg = JSON.parse(readArchive('package.json').toString());
   assert.ok(!pkg.devDependencies && !pkg.scripts);
   const { getCurrentFuseWire, FuseV1Options, FuseState } = await import('@electron/fuses');
   const fuses = await getCurrentFuseWire(executable);
