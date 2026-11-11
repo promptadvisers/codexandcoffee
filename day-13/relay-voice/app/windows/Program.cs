@@ -46,10 +46,13 @@ internal sealed class VoiceHelper : IDisposable
     private DateTimeOffset started;
     private bool held, shuttingDown, pasteCommitted;
     private int generation;
+    private readonly bool shortcutRegistered;
     private readonly bool noShortcuts = Environment.GetEnvironmentVariable("RELAY_NO_SHORTCUTS") == "1";
     public VoiceHelper()
     {
         _ = dispatcher.Handle;
+        // Registration consumes the shortcut so Space is not also typed into the editor.
+        shortcutRegistered = !noShortcuts && Native.RegisterHotKey(dispatcher.Handle, 1, 0x0002 | 0x0004 | 0x4000, 0x20);
         Directory.CreateDirectory(folder);
         try { settings = JsonNode.Parse(File.ReadAllText(Path.Combine(folder, "settings.json")))?.AsObject() ?? settings; } catch { }
         try { history = JsonNode.Parse(File.ReadAllText(Path.Combine(folder, "helper-history.json")))!.AsArray().Select(n => n!.AsObject()).Take(100).ToList(); } catch { }
@@ -76,7 +79,7 @@ internal sealed class VoiceHelper : IDisposable
             mic = key?.GetValue("Value") as string == "Deny" ? "denied" : WaveIn.DeviceCount > 0 ? "authorized" : "unavailable";
         }
         catch { }
-        return new { microphone = mic, accessibility = true, shortcut = !noShortcuts, backend = backend.Available };
+        return new { microphone = mic, accessibility = true, shortcut = shortcutRegistered, backend = backend.Available };
     }
     private void State(string reason = "") => Emit("state", new { state = phase, request_id = requestId, reason, mode });
     public void Start()
@@ -162,7 +165,7 @@ internal sealed class VoiceHelper : IDisposable
     }
     private async Task Poll()
     {
-        if (shuttingDown || noShortcuts) return;
+        if (shuttingDown || !shortcutRegistered) return;
         if (Native.Down(0x1B) && phase != "idle") { await Cancel("escape"); return; }
         var down = Native.Down(0x11) && Native.Down(0x10) && Native.Down(0x20);
         if (down && !held)
@@ -298,5 +301,5 @@ internal sealed class VoiceHelper : IDisposable
     private static void DeleteAudio(string? directory) { if (directory is not null) { try { Directory.Delete(directory, true); } catch { } } }
     private void CleanupAudio() { var directory = audioFolder; audioFolder = null; DeleteAudio(directory); }
     private void Shutdown() { if (shuttingDown) return; shuttingDown = true; operation?.Cancel(); recorder?.Dispose(); recorder = null; CleanupAudio(); Application.ExitThread(); }
-    public void Dispose() { Shutdown(); poll.Dispose(); dispatcher.Dispose(); operation?.Dispose(); }
+    public void Dispose() { Shutdown(); if (shortcutRegistered) Native.UnregisterHotKey(dispatcher.Handle, 1); poll.Dispose(); dispatcher.Dispose(); operation?.Dispose(); }
 }
