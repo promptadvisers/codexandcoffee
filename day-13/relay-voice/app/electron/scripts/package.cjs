@@ -54,7 +54,8 @@ async function main() {
     const destination = path.join(appRoot, mac ? 'dist/electron/Relay Voice.app' : 'dist/electron/Relay-Voice-Windows-x64');
     await fs.mkdir(path.dirname(destination), { recursive: true });
     await fs.rm(destination, { recursive: true, force: true });
-    await fs.cp(mac ? bundle : packageRoot, destination, { recursive: true, dereference: false });
+    if (mac) await fs.rename(bundle, destination);
+    else await fs.cp(packageRoot, destination, { recursive: true });
     console.log(`Packaged ${pkg.version} for ${process.platform}-${process.arch}`);
     execFileSync(process.execPath, [path.join(__dirname, 'verify-package.cjs')], { stdio: 'inherit' });
   } finally { await fs.rm(temp, { recursive: true, force: true }); }
