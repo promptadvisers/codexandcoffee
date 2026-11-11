@@ -67,6 +67,17 @@ check("settings and canvas JSON round trip", restored.canvases[canvas.canvasKey]
 checker.drawing = false
 stroke("Line",[NSPoint(x:1,y:1), NSPoint(x:8,y:8)],color:0,width:6)
 check("inactive handler rejects new stroke", checker.state.canvases[canvas.canvasKey]!.count == 4)
+checker.drawing = true
+checker.state.tool = "Line"
+canvas.mouseDown(with: event(.leftMouseDown, NSPoint(x: 10, y: 10)))
+canvas.mouseDragged(with: event(.leftMouseDragged, NSPoint(x: 20, y: 20)))
+canvas.mouseUp(with: event(.leftMouseUp, NSPoint(x: 70, y: 70)))
+check("release point is retained after the last drag event", checker.state.canvases[canvas.canvasKey]!.last!.points.last!.x == 70)
+let originalFolder = checker.folder
+checker.folder = originalFolder.appendingPathComponent("fresh-settings/subfolder", isDirectory: true)
+checker.save()
+check("save creates a writable settings directory", FileManager.default.fileExists(atPath: checker.stateURL.path))
+checker.folder = originalFolder
 checker.timerLabel = NSTextField(labelWithString: "")
 checker.timerStatus = NSTextField(labelWithString: "")
 checker.startButton = NSButton()

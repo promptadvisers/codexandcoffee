@@ -41,10 +41,12 @@ final class Canvas: NSView {
     override func draw(_ rect: NSRect) {
         guard let owner else { return }
         let background = owner.state.background
-        
-        if background == "Whiteboard" { NSColor.white.setFill(); bounds.fill() }
-        if background == "Blackboard" { NSColor(calibratedWhite: 0.07, alpha: 1).setFill(); bounds.fill() }
-        for mark in owner.state.canvases[canvasKey, default: []] { paint(mark) }
+
+        if owner.drawing && background == "Whiteboard" { NSColor.white.setFill(); bounds.fill() }
+        if owner.drawing && background == "Blackboard" { NSColor(calibratedWhite: 0.07, alpha: 1).setFill(); bounds.fill() }
+        if owner.drawing || background == "Desktop" {
+            for mark in owner.state.canvases[canvasKey, default: []] { paint(mark) }
+        }
         if let draft { paint(draft) }
         if owner.drawing {
             NSColor(calibratedWhite: 0.1, alpha: 0.9).setFill()
@@ -94,7 +96,15 @@ final class Canvas: NSView {
         needsDisplay = true
     }
     override func mouseUp(with event: NSEvent) {
-        guard let owner, let mark = draft else { return }
+        guard let owner, var mark = draft else { return }
+        let endpoint = InkPoint(convert(event.locationInWindow, from: nil))
+        if mark.tool == "Pen" {
+            if let last = mark.points.last, last.x != endpoint.x || last.y != endpoint.y {
+                mark.points.append(endpoint)
+            }
+        } else if let first = mark.points.first {
+            mark.points = [first, endpoint]
+        }
         owner.state.canvases[canvasKey, default: []].append(mark)
         draft = nil
         needsDisplay = true

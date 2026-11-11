@@ -43,6 +43,11 @@ public sealed class Settings
             Canvases[key].RemoveAll(s => s is null || s.Points is null || s.Points.Count == 0 ||
                 !double.IsFinite(s.Width) || s.Width <= 0 || s.Width > 100 ||
                 s.Points.Any(p => p is null || !double.IsFinite(p.X) || !double.IsFinite(p.Y)));
+            foreach (var stroke in Canvases[key])
+            {
+                if (!DrawingModel.Tools.Contains(stroke.Tool)) stroke.Tool = "Pen";
+                if (!DrawingModel.Colors.Contains(stroke.Color)) stroke.Color = "Blue";
+            }
         }
     }
 }

@@ -63,7 +63,9 @@ final class PracticeDelegate: NSObject, NSApplicationDelegate {
     @objc func increment() {
         clicks += 1
         counter.stringValue = "Underlying clicks: \(clicks)"
-        let url = Bundle.main.bundleURL.deletingLastPathComponent().appendingPathComponent("fixture-events.log")
+        let folder = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask)[0].appendingPathComponent("StageInk", isDirectory: true)
+        try? FileManager.default.createDirectory(at: folder, withIntermediateDirectories: true)
+        let url = folder.appendingPathComponent("fixture-events.log")
         let data = "\(Date().ISO8601Format()) click \(clicks)\n".data(using: .utf8)!
         if !FileManager.default.fileExists(atPath: url.path) { FileManager.default.createFile(atPath: url.path, contents: nil) }
         if let handle = try? FileHandle(forWritingTo: url) { _ = try? handle.seekToEnd(); try? handle.write(contentsOf: data); try? handle.close() }

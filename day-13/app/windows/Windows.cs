@@ -173,6 +173,7 @@ public sealed class Palette : Window
     private readonly TextBlock storage;
     private readonly List<int> registered = new();
     private bool refreshing;
+    private string? shortcutWarning;
     private HwndSource? source;
     public Palette(Controller controller)
     {
@@ -251,7 +252,7 @@ public sealed class Palette : Window
         status.Text = owner.Model.Drawing ? "DRAW · Escape returns to the desktop" : "INTERACT · mouse passes through";
         var count = owner.Model.State.Canvases.Where(p => p.Key.EndsWith("/" + owner.Model.State.Board)).Sum(p => p.Value.Count);
         status.Text += $"\n{owner.Model.State.Board} · {count} marks";
-        storage.Text = owner.Store.Error ?? "Settings saved in Local App Data / StageInk";
+        storage.Text = owner.Store.Error ?? shortcutWarning ?? "Settings saved in Local App Data / StageInk";
         refreshing = false;
     }
     private void RegisterKeys()
@@ -263,7 +264,8 @@ public sealed class Palette : Window
         {
             if (Native.RegisterHotKey(source.Handle, i + 1, 0x0001 | 0x0002 | 0x4000, (uint)keys[i])) registered.Add(i + 1);
         }
-        if (registered.Count != keys.Length) storage.Text = "Some shortcuts are already in use. The buttons still work.";
+        if (registered.Count != keys.Length) shortcutWarning = "Some shortcuts are already in use. The buttons still work.";
+        Refresh();
     }
     private IntPtr HandleMessage(IntPtr hwnd, int message, IntPtr wParam, IntPtr lParam, ref bool handled)
     {

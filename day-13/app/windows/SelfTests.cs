@@ -117,7 +117,13 @@ internal static class SelfTests
             controller.Model.End(new Point(100 + i * 120, 160));
         }
         var surface = new DrawingSurface(controller, "render");
-        SaveVisual(surface, Path.Combine(folder, "windows-drawing-components.png"), 680, 260);
+        var rendered = SaveVisual(surface, Path.Combine(folder, "windows-drawing-components.png"), 680, 260);
+        var pixels = new byte[680 * 260 * 4];
+        rendered.CopyPixels(pixels, 680 * 4, 0);
+        var colored = 0;
+        for (var i = 0; i < pixels.Length; i += 4)
+            if (pixels[i + 3] > 50 && Math.Max(pixels[i], Math.Max(pixels[i + 1], pixels[i + 2])) - Math.Min(pixels[i], Math.Min(pixels[i + 1], pixels[i + 2])) > 25) colored++;
+        Check("Production renderer produces colored strokes", colored > 100);
         Check("Production drawing renders to an image", new FileInfo(Path.Combine(folder, "windows-drawing-components.png")).Length > 500);
         var timer = new TimerWindow();
         timer.Show();
@@ -127,7 +133,7 @@ internal static class SelfTests
         timer.Close();
         controller.Palette.Hide();
     }
-    private static void SaveVisual(FrameworkElement element, string file, int width, int height)
+    private static RenderTargetBitmap SaveVisual(FrameworkElement element, string file, int width, int height)
     {
         element.Measure(new Size(width, height));
         element.Arrange(new Rect(0, 0, width, height));
@@ -138,5 +144,6 @@ internal static class SelfTests
         encoder.Frames.Add(BitmapFrame.Create(image));
         using var stream = File.Create(file);
         encoder.Save(stream);
+        return image;
     }
 }

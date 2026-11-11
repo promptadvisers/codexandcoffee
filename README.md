@@ -94,6 +94,15 @@ A 45-minute lesson with 48 slides: five workflow structures, plain-English promp
 
 A 55-minute lesson with 35 slides on native Codex assistant features, scheduled work, phone access, and building a custom assistant with the Codex SDK. Includes Gratis, a tested SDK example, exact prompts and the recreated wide bot-identity illustration.
 
+### [Day 13: Rebuild an App with Codex](day-13/)
+
+- [Download PowerPoint](https://github.com/promptadvisers/codexandcoffee/raw/refs/heads/main/day-13/Day-13.pptx)
+- [Download StageInk for Mac (.dmg)](https://github.com/promptadvisers/codexandcoffee/releases/download/day-13-stageink-v0.2.0/StageInk-macOS.dmg)
+- [Download StageInk for Windows (.zip)](https://github.com/promptadvisers/codexandcoffee/releases/download/day-13-stageink-v0.2.0/StageInk-Windows-x64.zip)
+- [Browse the app source](day-13/app/)
+
+A 45-minute tutorial with DemoPro inspection, REA, a written plan, staged app development, exact prompts and observed results. The app downloads are previews with platform-specific verification notes.
+
 **[Try the Day 3 app in your browser](https://promptadvisers.github.io/codexandcoffee/day-03/)**
 
 ## Reusable skills
@@ -116,4 +125,4 @@ Copy the complete `skills/retro` folder into your project's `.agents/skills` fol
 
 Use the download links above. You do not need to click through every file or use the green Code button. If GitHub says a file is too large to preview, use its download link instead; the file can still be opened on your computer.
 
-Materials for Days 1–12 are available now. The combined ZIP above contains Days 1–4; download Days 5–12 separately from their sections. Later days will appear here as their materials are added.
+Materials for Days 1–13 are available now. The combined ZIP above contains Days 1–4; download Days 5–13 separately from their sections. Later days will appear here as their materials are added.
