@@ -101,6 +101,7 @@ internal sealed class VoiceHelper : IDisposable
         var id = input["id"]?.GetValue<string>();
         var command = input["command"]?.GetValue<string>();
         if (string.IsNullOrEmpty(id) || command is null) return;
+        var commandVersion = generation;
         try
         {
             switch (command)
@@ -125,17 +126,20 @@ internal sealed class VoiceHelper : IDisposable
                 case "status":
                     if (!Begin(id, "status")) { Reply(id, false, new { error = "Busy." }); break; }
                     var version = generation;
+                    commandVersion = version;
                     var status = await backend.Call(Payload("status"), _ => { }, operation!.Token);
                     if (version != generation) break;
                     Reply(id, status["ok"]?.GetValue<bool>() == true, new { result = status, permissions = Permissions() }); Finish(); break;
                 case "ask":
                     var text = input["text"]?.GetValue<string>()?.Trim() ?? "";
                     if (text.Length is 0 or > 30000 || !Begin(id, "asking")) { Reply(id, false, new { error = "Add a request and finish the current operation." }); break; }
+                    commandVersion = generation;
                     mode = "ask"; Reply(id, fields: new { accepted = true }); await Ask(text, generation); break;
                 case "test_insertion":
                     if (!Begin(id, "inserting")) { Reply(id, false, new { error = "Busy." }); break; }
                     Reply(id, fields: new { accepted = true });
                     var testGeneration = generation;
+                    commandVersion = testGeneration;
                     for (var remaining = 8; remaining > 0; remaining--) { State("test_countdown_" + remaining); await Task.Delay(1000, operation!.Token); }
                     if (testGeneration != generation) break;
                     target = FocusTarget.Capture(); lastText = requestText = "Relay insertion test.";
@@ -148,7 +152,7 @@ internal sealed class VoiceHelper : IDisposable
             }
         }
         catch (OperationCanceledException) { }
-        catch (Exception) { if (phase != "idle") Fail("The operation could not finish. Check permissions and provider setup."); else Reply(id, false, new { error = "The request could not be completed." }); }
+        catch (Exception) { if (commandVersion != generation) return; if (phase != "idle") Fail("The operation could not finish. Check permissions and provider setup."); else Reply(id, false, new { error = "The request could not be completed." }); }
     }
     private bool Begin(string id, string next)
     {
