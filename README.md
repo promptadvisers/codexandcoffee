@@ -100,6 +100,7 @@ A 55-minute lesson with 35 slides on native Codex assistant features, scheduled 
 - [Download StageInk for Mac (.dmg)](https://github.com/promptadvisers/codexandcoffee/releases/download/day-13-stageink-v0.2.0/StageInk-macOS.dmg)
 - [Download StageInk for Windows (.zip)](https://github.com/promptadvisers/codexandcoffee/releases/download/day-13-stageink-v0.2.0/StageInk-Windows-x64.zip)
 - [Browse the app source](day-13/app/)
+- [Green Relay Voice — Mac, Windows, setup and source](day-13/relay-voice/README.md)
 
 A 45-minute tutorial with DemoPro inspection, REA, a written plan, staged app development, exact prompts and observed results. The app downloads are previews with platform-specific verification notes.
 
