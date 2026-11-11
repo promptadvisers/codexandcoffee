@@ -16,6 +16,7 @@ A 45-minute lesson on inspecting DemoPro, using Computer Use and REA, writing a 
 - [App source only](https://github.com/promptadvisers/codexandcoffee/releases/download/day-13-stageink-v0.2.0/StageInk-Source.zip)
 - [Release and verification notes](https://github.com/promptadvisers/codexandcoffee/releases/tag/day-13-stageink-v0.2.0)
 - [Browse the source](app/)
+- [Read the build and verification record](BUILD-VERIFICATION.md)
 
 On Mac, open the DMG, drag StageInk into Applications, eject the disk and launch StageInk. On Windows, extract the ZIP and launch StageInk.exe. The Windows package includes its runtime. These are unsigned or ad-hoc-signed previews, and operating-system security may require approval to open them.
 
