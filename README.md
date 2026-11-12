@@ -104,6 +104,14 @@ A 55-minute lesson with 35 slides on native Codex assistant features, scheduled 
 
 A 45-minute tutorial with DemoPro inspection, REA, a written plan, staged app development, exact prompts and observed results. The app downloads are previews with platform-specific verification notes.
 
+### [Day 14: Fast Decisions and Codex Workflows](day-14/)
+
+- [Download PowerPoint](https://github.com/promptadvisers/codexandcoffee/raw/refs/heads/main/day-14/Day-14.pptx)
+- [Download the learner kit](https://github.com/promptadvisers/codexandcoffee/raw/refs/heads/main/day-14/Day-14-Learner-Kit.zip)
+- [Read the exact prompts](day-14/PROMPTS.md)
+
+A 45-minute lesson with 51 slides on the Decisions API, CLI versus chat, model handoffs and app installation. Includes a Request Sorter with labeled replay mode, a tested QuickList browser app and documentation-led build prompts.
+
 **[Try the Day 3 app in your browser](https://promptadvisers.github.io/codexandcoffee/day-03/)**
 
 ## Reusable skills
@@ -126,4 +134,4 @@ Copy the complete `skills/retro` folder into your project's `.agents/skills` fol
 
 Use the download links above. You do not need to click through every file or use the green Code button. If GitHub says a file is too large to preview, use its download link instead; the file can still be opened on your computer.
 
-Materials for Days 1–13 are available now. The combined ZIP above contains Days 1–4; download Days 5–13 separately from their sections. Later days will appear here as their materials are added.
+Materials for Days 1–14 are available now. The combined ZIP above contains Days 1–4; download Days 5–14 separately from their sections. Later days will appear here as their materials are added.
