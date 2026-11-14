@@ -112,6 +112,15 @@ A 45-minute tutorial with DemoPro inspection, REA, a written plan, staged app de
 
 A 45-minute lesson with 51 slides on the Decisions API, CLI versus chat, model handoffs and app installation. Includes a Request Sorter with labeled replay mode, a tested QuickList browser app and documentation-led build prompts.
 
+### [Day 15 — Your One-Person Army](day-15/)
+
+- [Download PowerPoint](https://github.com/promptadvisers/codexandcoffee/raw/refs/heads/main/day-15/Day-15.pptx)
+- [Download the learner kit](https://github.com/promptadvisers/codexandcoffee/raw/refs/heads/main/day-15/Day-15-Learner-Kit.zip)
+- [Browse 180 use cases](https://promptadvisers.github.io/codexandcoffee/day-15/)
+- [Read the prompts](day-15/PROMPTS.md)
+
+A 45-minute finale with 51 slides and 30 use cases each for sales, marketing, finance, operations, HR and recruitment. Includes an editable workspace template, model guidance, and prompts for researching and building a workflow around your own bottleneck.
+
 **[Try the Day 3 app in your browser](https://promptadvisers.github.io/codexandcoffee/day-03/)**
 
 ## Reusable skills
@@ -134,4 +143,4 @@ Copy the complete `skills/retro` folder into your project's `.agents/skills` fol
 
 Use the download links above. You do not need to click through every file or use the green Code button. If GitHub says a file is too large to preview, use its download link instead; the file can still be opened on your computer.
 
-Materials for Days 1–14 are available now. The combined ZIP above contains Days 1–4; download Days 5–14 separately from their sections. Later days will appear here as their materials are added.
+Materials for all 15 days are available. The combined ZIP above contains Days 1–4. Download Days 5–15 from their sections.

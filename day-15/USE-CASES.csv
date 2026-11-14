@@ -1,0 +1,181 @@
+department,group,task,result,model_starting_point,approach
+Sales,Find the right opportunities,Account research,A sourced company brief,Terra,On-demand request; schedule a recurring review if useful
+Sales,Find the right opportunities,Lead list cleanup,Duplicates and missing fields,Terra,On-demand request; schedule a recurring review if useful
+Sales,Find the right opportunities,Ideal-customer matching,Matches to your stated criteria,Terra,On-demand request; schedule a recurring review if useful
+Sales,Find the right opportunities,Buying signals,Relevant public changes,Terra,On-demand request; schedule a recurring review if useful
+Sales,Find the right opportunities,Contact preparation,Published roles and contact routes,Terra,On-demand request; schedule a recurring review if useful
+Sales,Find the right opportunities,Inbound request sorting,"Product, region and request type",Terra,On-demand request; schedule a recurring review if useful
+Sales,Find the right opportunities,Discovery preparation,Questions from account context,Terra,On-demand request; schedule a recurring review if useful
+Sales,Find the right opportunities,Call-note summaries,"Needs, objections and next steps",Terra,On-demand request; schedule a recurring review if useful
+Sales,Find the right opportunities,Competitor comparisons,A source-linked comparison,Terra,On-demand request; schedule a recurring review if useful
+Sales,Find the right opportunities,Territory preparation,Accounts grouped by your rules,Terra,On-demand request; schedule a recurring review if useful
+Sales,Move the conversation forward,Personalized outreach,Drafts using verified context,Terra,On-demand request; schedule a recurring review if useful
+Sales,Move the conversation forward,Follow-up drafts,A reply with the agreed next step,Terra,On-demand request; schedule a recurring review if useful
+Sales,Move the conversation forward,Proposal assembly,"Approved scope, price and terms",Terra,On-demand request; schedule a recurring review if useful
+Sales,Move the conversation forward,Quote calculations,Checked totals from pricing rules,Terra,On-demand request; schedule a recurring review if useful
+Sales,Move the conversation forward,Objection responses,Answers from approved material,Terra,On-demand request; schedule a recurring review if useful
+Sales,Move the conversation forward,Demo preparation,A tailored agenda and checklist,Terra,On-demand request; schedule a recurring review if useful
+Sales,Move the conversation forward,Meeting recap,Decisions and commitments,Terra,On-demand request; schedule a recurring review if useful
+Sales,Move the conversation forward,Proposal version checks,Changes in scope or pricing,Terra,On-demand request; schedule a recurring review if useful
+Sales,Move the conversation forward,Renewal preparation,"Usage, dates and open issues",Terra,On-demand request; schedule a recurring review if useful
+Sales,Move the conversation forward,Handoff to delivery,What was sold and promised,Terra,On-demand request; schedule a recurring review if useful
+Sales,Keep the pipeline moving,Stale-deal review,Conversations needing attention,Luna,On-demand request; schedule a recurring review if useful
+Sales,Keep the pipeline moving,CRM update drafts,Changes backed by source notes,Luna,On-demand request; schedule a recurring review if useful
+Sales,Keep the pipeline moving,Next-step tracking,Missing owners and dates,Luna,On-demand request; schedule a recurring review if useful
+Sales,Keep the pipeline moving,Pipeline summaries,Stage totals and exceptions,Luna,On-demand request; schedule a recurring review if useful
+Sales,Keep the pipeline moving,Forecast calculations,Scenarios from explicit assumptions,Luna,On-demand request; schedule a recurring review if useful
+Sales,Keep the pipeline moving,Win/loss themes,Patterns from recorded reasons,Luna,On-demand request; schedule a recurring review if useful
+Sales,Keep the pipeline moving,Sales content search,The right approved case study,Luna,On-demand request; schedule a recurring review if useful
+Sales,Keep the pipeline moving,Request routing,A fixed queue plus review cases,Luna,Build a connected workflow; verify available access
+Sales,Keep the pipeline moving,Follow-up scheduling,A recurring review of current leads,Luna,On-demand request; schedule a recurring review if useful
+Sales,Keep the pipeline moving,Weekly sales brief,"Changes, blockers and decisions",Luna,Scheduled review of current sources
+Marketing,Turn ideas into content,Audience research,Needs from supplied research,Terra,On-demand request; schedule a recurring review if useful
+Marketing,Turn ideas into content,Topic research,A sourced content shortlist,Terra,On-demand request; schedule a recurring review if useful
+Marketing,Turn ideas into content,Editorial planning,A calendar tied to your goals,Terra,On-demand request; schedule a recurring review if useful
+Marketing,Turn ideas into content,Brand voice guide,Rules from your approved writing,Terra,On-demand request; schedule a recurring review if useful
+Marketing,Turn ideas into content,Campaign concepts,Distinct creative directions,Terra,On-demand request; schedule a recurring review if useful
+Marketing,Turn ideas into content,Post drafting,Channel-specific drafts,Terra,On-demand request; schedule a recurring review if useful
+Marketing,Turn ideas into content,Newsletter assembly,A draft from approved updates,Terra,On-demand request; schedule a recurring review if useful
+Marketing,Turn ideas into content,Article development,"Outline, sources and draft",Terra,On-demand request; schedule a recurring review if useful
+Marketing,Turn ideas into content,Repurpose long content,Posts from a transcript or article,Terra,On-demand request; schedule a recurring review if useful
+Marketing,Turn ideas into content,Content refresh,Outdated claims and proposed fixes,Terra,On-demand request; schedule a recurring review if useful
+Marketing,Create the actual assets,Image concepts,"Prompts, references and art direction",Image tools,On-demand request; schedule a recurring review if useful
+Marketing,Create the actual assets,Product image variants,Reference-led backgrounds and scenes,Image tools,On-demand request; schedule a recurring review if useful
+Marketing,Create the actual assets,Consistent slide artwork,A reusable visual style and assets,Image tools,On-demand request; schedule a recurring review if useful
+Marketing,Create the actual assets,Explainer videos,"Script, narration and animation",Image tools,On-demand request; schedule a recurring review if useful
+Marketing,Create the actual assets,Short video edits,A cut plan and edited clips,Image tools,On-demand request; schedule a recurring review if useful
+Marketing,Create the actual assets,Captions and subtitles,Timed text for review,Image tools,On-demand request; schedule a recurring review if useful
+Marketing,Create the actual assets,Thumbnails,On-brand concepts and versions,Image tools,On-demand request; schedule a recurring review if useful
+Marketing,Create the actual assets,Landing pages,An editable page from your brief,Image tools,On-demand request; schedule a recurring review if useful
+Marketing,Create the actual assets,Sales collateral,"One-pagers, decks and case studies",Image tools,On-demand request; schedule a recurring review if useful
+Marketing,Create the actual assets,Creative resizing,Assets adapted to channel sizes,Image tools,On-demand request; schedule a recurring review if useful
+Marketing,Run and improve campaigns,Campaign setup plans,"Channels, owners and dates",Sol,On-demand request; schedule a recurring review if useful
+Marketing,Run and improve campaigns,Email sequence drafts,Messages for each stage,Sol,On-demand request; schedule a recurring review if useful
+Marketing,Run and improve campaigns,Message variants,Alternatives for a planned test,Sol,On-demand request; schedule a recurring review if useful
+Marketing,Run and improve campaigns,SEO checks,Technical and content fixes,Sol,On-demand request; schedule a recurring review if useful
+Marketing,Run and improve campaigns,Brand consistency review,Off-brand copy and visuals,Sol,On-demand request; schedule a recurring review if useful
+Marketing,Run and improve campaigns,Campaign fact checks,"Dates, claims and prices aligned",Sol,On-demand request; schedule a recurring review if useful
+Marketing,Run and improve campaigns,Performance summaries,What changed in current exports,Sol,On-demand request; schedule a recurring review if useful
+Marketing,Run and improve campaigns,Attribution cleanup,Missing or inconsistent campaign tags,Sol,On-demand request; schedule a recurring review if useful
+Marketing,Run and improve campaigns,Content inventory,"Keep, refresh or retire candidates",Sol,On-demand request; schedule a recurring review if useful
+Marketing,Run and improve campaigns,Weekly marketing brief,Results and next experiments,Sol,Scheduled review of current sources
+Finance,Keep the records clean,Invoice extraction,Fields from supplied invoices,Luna,On-demand request; schedule a recurring review if useful
+Finance,Keep the records clean,Receipt organization,Files linked to transactions,Luna,On-demand request; schedule a recurring review if useful
+Finance,Keep the records clean,Expense categorization,Categories from your own rules,Luna,On-demand request; schedule a recurring review if useful
+Finance,Keep the records clean,Duplicate-payment checks,Repeated IDs and amounts,Luna,On-demand request; schedule a recurring review if useful
+Finance,Keep the records clean,Payment matching,Payments linked to invoices,Luna,On-demand request; schedule a recurring review if useful
+Finance,Keep the records clean,Unmatched-item review,Records needing investigation,Luna,On-demand request; schedule a recurring review if useful
+Finance,Keep the records clean,Supplier-name cleanup,One consistent vendor list,Luna,On-demand request; schedule a recurring review if useful
+Finance,Keep the records clean,Missing-document checks,Invoices or receipts to request,Luna,On-demand request; schedule a recurring review if useful
+Finance,Keep the records clean,Subscription inventory,Recurring charges and owners,Luna,On-demand request; schedule a recurring review if useful
+Finance,Keep the records clean,Audit-trail assembly,Source links for each calculation,Luna,On-demand request; schedule a recurring review if useful
+Finance,Follow the money,Overdue-balance review,Only the amount still unpaid,Sol,On-demand request; schedule a recurring review if useful
+Finance,Follow the money,Reminder drafts,Polite messages ready to review,Sol,Scheduled review of current sources
+Finance,Follow the money,Cash-flow scenarios,Assumptions and projected balances,Sol,On-demand request; schedule a recurring review if useful
+Finance,Follow the money,Budget versus actual,Variances with source totals,Sol,On-demand request; schedule a recurring review if useful
+Finance,Follow the money,Project profitability,Revenue and cost by project,Sol,On-demand request; schedule a recurring review if useful
+Finance,Follow the money,Spend trend analysis,Changes by category or vendor,Sol,On-demand request; schedule a recurring review if useful
+Finance,Follow the money,Recurring-cost review,Renewal dates and cost changes,Sol,On-demand request; schedule a recurring review if useful
+Finance,Follow the money,Refund reconciliation,Refunds matched to transactions,Sol,On-demand request; schedule a recurring review if useful
+Finance,Follow the money,Purchase-request routing,Policy-based queues and exceptions,Sol,Build a connected workflow; verify available access
+Finance,Follow the money,Invoice approval preparation,Required evidence and missing checks,Sol,On-demand request; schedule a recurring review if useful
+Finance,Make reporting easier,Month-end checklist,"Owners, status and missing items",Sol,On-demand request; schedule a recurring review if useful
+Finance,Make reporting easier,Management report drafts,Charts and plain-English notes,Sol,On-demand request; schedule a recurring review if useful
+Finance,Make reporting easier,Board-pack assembly,Approved figures in your template,Sol,On-demand request; schedule a recurring review if useful
+Finance,Make reporting easier,Scenario modeling,Compare explicit business assumptions,Sol,On-demand request; schedule a recurring review if useful
+Finance,Make reporting easier,Currency normalization,"Rates, dates and converted amounts",Sol,On-demand request; schedule a recurring review if useful
+Finance,Make reporting easier,Tax-document collection,A package for your accountant,Sol,On-demand request; schedule a recurring review if useful
+Finance,Make reporting easier,Payroll input checks,Missing fields and arithmetic flags,Sol,On-demand request; schedule a recurring review if useful
+Finance,Make reporting easier,Contract billing review,Milestones compared with invoices,Sol,On-demand request; schedule a recurring review if useful
+Finance,Make reporting easier,Finance dashboard,A view of checked source data,Sol,On-demand request; schedule a recurring review if useful
+Finance,Make reporting easier,Weekly finance brief,"Cash, overdue items and exceptions",Sol,Scheduled review of current sources
+Operations,Turn discussions into delivery,Meeting action lists,Agreed owners and due dates,Terra,On-demand request; schedule a recurring review if useful
+Operations,Turn discussions into delivery,Project status updates,"Progress, blockers and decisions",Terra,Scheduled review of current sources
+Operations,Turn discussions into delivery,Dependency checks,Work waiting on other work,Terra,On-demand request; schedule a recurring review if useful
+Operations,Turn discussions into delivery,Calendar conflict checks,Overlaps to resolve,Terra,On-demand request; schedule a recurring review if useful
+Operations,Turn discussions into delivery,Deadline reminders,Upcoming commitments to review,Terra,Scheduled review of current sources
+Operations,Turn discussions into delivery,Daily preparation,"Meetings, context and priorities",Terra,Scheduled review of current sources
+Operations,Turn discussions into delivery,Decision-log updates,What changed and who agreed,Terra,On-demand request; schedule a recurring review if useful
+Operations,Turn discussions into delivery,Handoff documents,"Inputs, responsibilities and checks",Terra,On-demand request; schedule a recurring review if useful
+Operations,Turn discussions into delivery,Milestone reviews,What is ready and what is missing,Terra,On-demand request; schedule a recurring review if useful
+Operations,Turn discussions into delivery,Retrospective summaries,Repeated friction and improvements,Terra,On-demand request; schedule a recurring review if useful
+Operations,Make processes easier to run,Procedure drafting,Steps from the process you show,Sol,On-demand request; schedule a recurring review if useful
+Operations,Make processes easier to run,Process mapping,A diagram of the current workflow,Sol,On-demand request; schedule a recurring review if useful
+Operations,Make processes easier to run,Checklist creation,A repeatable completion check,Sol,On-demand request; schedule a recurring review if useful
+Operations,Make processes easier to run,Form-to-record workflows,Validated inputs in the right system,Sol,Build a connected workflow; verify available access
+Operations,Make processes easier to run,Request intake,Consistent fields and missing context,Sol,On-demand request; schedule a recurring review if useful
+Operations,Make processes easier to run,Queue routing,Rules for where work goes next,Sol,Build a connected workflow; verify available access
+Operations,Make processes easier to run,Data cleanup,"Consistent names, dates and IDs",Sol,On-demand request; schedule a recurring review if useful
+Operations,Make processes easier to run,File organization,A searchable folder structure,Sol,On-demand request; schedule a recurring review if useful
+Operations,Make processes easier to run,Document comparison,Changes and unresolved conflicts,Sol,On-demand request; schedule a recurring review if useful
+Operations,Make processes easier to run,Knowledge-base maintenance,Stale pages and suggested updates,Sol,On-demand request; schedule a recurring review if useful
+Operations,Connect and monitor the work,API integration,A tested connection to your system,Sol,Build a connected workflow; verify available access
+Operations,Connect and monitor the work,Internal tool building,A small app for a repeated task,Sol,Build a connected workflow; verify available access
+Operations,Connect and monitor the work,Scheduled reporting,Current data in a recurring brief,Sol,On-demand request; schedule a recurring review if useful
+Operations,Connect and monitor the work,Exception monitoring,Failures and unusual records,Sol,Build a connected workflow; verify available access
+Operations,Connect and monitor the work,Vendor comparison,Evidence against your requirements,Sol,On-demand request; schedule a recurring review if useful
+Operations,Connect and monitor the work,Inventory reviews,Low stock and mismatched records,Sol,On-demand request; schedule a recurring review if useful
+Operations,Connect and monitor the work,Service-level tracking,Late work and response times,Sol,On-demand request; schedule a recurring review if useful
+Operations,Connect and monitor the work,Release preparation,Checks before an internal rollout,Sol,On-demand request; schedule a recurring review if useful
+Operations,Connect and monitor the work,Automation failure review,"Logs, cause and repair plan",Sol,On-demand request; schedule a recurring review if useful
+Operations,Connect and monitor the work,Executive preparation,The decisions that need attention,Sol,On-demand request; schedule a recurring review if useful
+HR,Welcome and support employees,Onboarding plans,Role-specific first-week steps,Terra,On-demand request; schedule a recurring review if useful
+HR,Welcome and support employees,New-starter packets,Approved documents and links,Terra,On-demand request; schedule a recurring review if useful
+HR,Welcome and support employees,Welcome-message drafts,A clear introduction for review,Terra,On-demand request; schedule a recurring review if useful
+HR,Welcome and support employees,Equipment requests,Required items and owners,Terra,On-demand request; schedule a recurring review if useful
+HR,Welcome and support employees,Access-request preparation,Requests tied to approved roles,Terra,On-demand request; schedule a recurring review if useful
+HR,Welcome and support employees,Policy question answers,Cited passages from your handbook,Terra,On-demand request; schedule a recurring review if useful
+HR,Welcome and support employees,Benefits information,Approved explanations and contacts,Terra,On-demand request; schedule a recurring review if useful
+HR,Welcome and support employees,Leave-request routing,The correct process and reviewer,Terra,Build a connected workflow; verify available access
+HR,Welcome and support employees,Employee-letter drafts,Approved templates with checked fields,Terra,On-demand request; schedule a recurring review if useful
+HR,Welcome and support employees,Employee-service inbox,Request categories and missing details,Terra,On-demand request; schedule a recurring review if useful
+HR,Make internal knowledge useful,Handbook updates,Proposed changes with source links,Terra,On-demand request; schedule a recurring review if useful
+HR,Make internal knowledge useful,Policy comparison,Differences between versions,Terra,On-demand request; schedule a recurring review if useful
+HR,Make internal knowledge useful,Training outlines,"Objectives, lessons and exercises",Terra,On-demand request; schedule a recurring review if useful
+HR,Make internal knowledge useful,Training materials,"Slides, guides and explainers",Terra,On-demand request; schedule a recurring review if useful
+HR,Make internal knowledge useful,Role documentation,Responsibilities and handoffs,Terra,On-demand request; schedule a recurring review if useful
+HR,Make internal knowledge useful,Internal communications,Clear messages from approved facts,Terra,On-demand request; schedule a recurring review if useful
+HR,Make internal knowledge useful,Manager conversation guides,Prompts from your stated process,Terra,On-demand request; schedule a recurring review if useful
+HR,Make internal knowledge useful,Feedback summaries,De-identified themes for review,Terra,On-demand request; schedule a recurring review if useful
+HR,Make internal knowledge useful,Accessibility checks,Issues in internal documents,Terra,On-demand request; schedule a recurring review if useful
+HR,Make internal knowledge useful,Translation drafts,Localized versions for review,Terra,On-demand request; schedule a recurring review if useful
+HR,Run the people processes,Onboarding status,Missing steps and owners,Luna,Scheduled review of current sources
+HR,Run the people processes,Offboarding checklists,Approved access and asset steps,Luna,On-demand request; schedule a recurring review if useful
+HR,Run the people processes,Training completion,Gaps in current records,Luna,Scheduled review of current sources
+HR,Run the people processes,Certification reminders,Upcoming expiry dates,Luna,Scheduled review of current sources
+HR,Run the people processes,HR data quality,Inconsistent or missing fields,Luna,On-demand request; schedule a recurring review if useful
+HR,Run the people processes,Headcount reporting,Totals from approved records,Luna,On-demand request; schedule a recurring review if useful
+HR,Run the people processes,Workforce scenarios,Costs from explicit assumptions,Luna,On-demand request; schedule a recurring review if useful
+HR,Run the people processes,Review-cycle coordination,"Dates, documents and reminders",Luna,On-demand request; schedule a recurring review if useful
+HR,Run the people processes,HR audit preparation,Required records in one package,Luna,On-demand request; schedule a recurring review if useful
+HR,Run the people processes,HR service reporting,"Volume, wait time and open requests",Luna,On-demand request; schedule a recurring review if useful
+Recruitment,Define and explain the role,Hiring intake,"Goals, scope and open questions",Terra,On-demand request; schedule a recurring review if useful
+Recruitment,Define and explain the role,Role requirements,Job-related criteria to approve,Terra,On-demand request; schedule a recurring review if useful
+Recruitment,Define and explain the role,Job-description drafts,A clear role and expectations,Terra,On-demand request; schedule a recurring review if useful
+Recruitment,Define and explain the role,Job-ad variants,Versions for different channels,Terra,On-demand request; schedule a recurring review if useful
+Recruitment,Define and explain the role,Inclusive-language review,Unnecessary barriers in wording,Terra,On-demand request; schedule a recurring review if useful
+Recruitment,Define and explain the role,Compensation research,Published ranges with sources,Terra,On-demand request; schedule a recurring review if useful
+Recruitment,Define and explain the role,Interview plan,"Stages, owners and purpose",Terra,On-demand request; schedule a recurring review if useful
+Recruitment,Define and explain the role,Question-bank drafts,Questions tied to approved criteria,Terra,On-demand request; schedule a recurring review if useful
+Recruitment,Define and explain the role,Scorecard templates,Evidence fields for human reviewers,Terra,On-demand request; schedule a recurring review if useful
+Recruitment,Define and explain the role,Candidate information pack,"Process, role and preparation",Terra,On-demand request; schedule a recurring review if useful
+Recruitment,Coordinate the candidate journey,Candidate outreach drafts,"Relevant, respectful introductions",Terra,On-demand request; schedule a recurring review if useful
+Recruitment,Coordinate the candidate journey,Application acknowledgment,Clear next steps and timing,Terra,On-demand request; schedule a recurring review if useful
+Recruitment,Coordinate the candidate journey,Availability collection,A clean scheduling shortlist,Terra,On-demand request; schedule a recurring review if useful
+Recruitment,Coordinate the candidate journey,Interview scheduling,Options and conflict checks,Terra,On-demand request; schedule a recurring review if useful
+Recruitment,Coordinate the candidate journey,Interviewer preparation,Role brief and agreed questions,Terra,On-demand request; schedule a recurring review if useful
+Recruitment,Coordinate the candidate journey,Candidate FAQ,Answers from approved information,Terra,On-demand request; schedule a recurring review if useful
+Recruitment,Coordinate the candidate journey,Interview-note organization,Evidence under agreed headings,Terra,On-demand request; schedule a recurring review if useful
+Recruitment,Coordinate the candidate journey,Missing-feedback reminders,Outstanding reviewer input,Terra,Scheduled review of current sources
+Recruitment,Coordinate the candidate journey,Candidate-update drafts,Status messages for review,Terra,On-demand request; schedule a recurring review if useful
+Recruitment,Coordinate the candidate journey,Offer-document preparation,Approved terms and checked details,Terra,On-demand request; schedule a recurring review if useful
+Recruitment,Improve the recruiting process,Funnel reporting,Counts and time in each stage,Sol,On-demand request; schedule a recurring review if useful
+Recruitment,Improve the recruiting process,Source performance,Volume and outcomes by channel,Sol,On-demand request; schedule a recurring review if useful
+Recruitment,Improve the recruiting process,Scheduling bottlenecks,Where candidates wait,Sol,On-demand request; schedule a recurring review if useful
+Recruitment,Improve the recruiting process,Job-ad refresh,Outdated facts and requirements,Sol,On-demand request; schedule a recurring review if useful
+Recruitment,Improve the recruiting process,Agency coordination,"Briefs, updates and open questions",Sol,On-demand request; schedule a recurring review if useful
+Recruitment,Improve the recruiting process,Careers-page updates,Approved role information,Sol,On-demand request; schedule a recurring review if useful
+Recruitment,Improve the recruiting process,Hiring-event preparation,"Invites, agenda and materials",Sol,On-demand request; schedule a recurring review if useful
+Recruitment,Improve the recruiting process,Candidate-experience themes,De-identified feedback patterns,Sol,On-demand request; schedule a recurring review if useful
+Recruitment,Improve the recruiting process,Compliance checklist assembly,Required steps for expert review,Sol,On-demand request; schedule a recurring review if useful
+Recruitment,Improve the recruiting process,Recruiting weekly brief,"Open roles, delays and decisions",Sol,Scheduled review of current sources
